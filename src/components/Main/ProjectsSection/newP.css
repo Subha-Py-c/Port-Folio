@@ -1,57 +1,87 @@
 #s3-projects {
-    height: auto;
-    /* border: 1px solid blue; */
+  height: auto;
+  /* border: 1px solid blue; */
 }
 
 .project-heading-container {
-    position: relative;
-    margin: 0;
-    padding-top: 0px;
-    width: 100%;
+  position: relative;
+  margin: 0;
+  padding-top: 0px;
+  width: 100%;
 }
 
 .exp {
-    margin: 200px 30px 30px var(--margin-left);
-    font-size: var(--heading-text-size);
-    font-weight: var(--heading-weight);
+  margin: 200px 30px 30px var(--margin-left);
+  font-size: var(--heading-text-size);
+  font-weight: var(--heading-weight);
 }
 summary {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 details {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 
+/* new */
+.project-container {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Ensure parent allows absolute positioning of children */
+}
+
+/* Centering the Title Wrapper */
 .projects-wrapper {
-    box-sizing: border-box;
-    margin-top: 6vh;
-    width: fit-content !important;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  text-align: center;
+  width: auto !important;
+  margin: 0 !important; /* Overriding previous margins to force center */
+  pointer-events: none; /* Let clicks pass through to cards if they overlap slightly */
 }
 
-@media screen and (min-width: 1025px) {
-    details {
-        line-height: 1.1rem;
-    }
+/* Existing Glass Card Styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+.project-card-image {
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 1024px) {
-    #project-heading {
-        font-size: xx-large;
-    }
-    .projects-wrapper {
-        margin-top: 6vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
+  #div3 {
+    font-size: 4rem; /* Adjust title size for tablets */
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .projects-wrapper {
-        margin-top: 2vh;
-        margin-left: 3vw;
-        margin-right: 3vw;
-    }
+  .project-container {
+    height: 180vh; /* More height on mobile to prevent stacking */
+  }
+  .projects-wrapper {
+    top: 10%; /* On mobile, move title up so cards can flow below */
+    transform: translate(-50%, 0);
+  }
 }

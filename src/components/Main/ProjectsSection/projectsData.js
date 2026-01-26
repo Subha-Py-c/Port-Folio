@@ -37,15 +37,15 @@ const projects = [
     image: "https://pseudo-random.vercel.app/favicon.ico",
   },
 
-  {
-    title: "markdown2pdf",
-    summary: "Highquality markdown, latex editor and pdf converter for free",
-    description:
-      "webapp to edit markdown documents and latex, insert images, links. Easily export to PDF/txt/md. completely free.",
-    technologies: ["React", "TailwindCSS", "jsPDF"],
-    link: "https://www.opencanvas.blog/markdown2pdf",
-    image: "/images/projects-imgs/md2pdf.jpeg",
-  },
+  // {
+  //   title: "markdown2pdf",
+  //   summary: "Highquality markdown, latex editor and pdf converter for free",
+  //   description:
+  //     "webapp to edit markdown documents and latex, insert images, links. Easily export to PDF/txt/md. completely free.",
+  //   technologies: ["React", "TailwindCSS", "jsPDF"],
+  //   link: "https://www.opencanvas.blog/markdown2pdf",
+  //   image: "/images/projects-imgs/md2pdf.jpeg",
+  // },
 
   {
     title: "LumiFeed",

@@ -1,5 +1,5 @@
 .invert {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 html.invert,
@@ -12,93 +12,98 @@ html.invert #s3-projects,
 html.invert #s4-contacts,
 html.invert #s5-thanks,
 html.invert .d1-2-3 {
-    background-color: var(--dark-mode-bg);
-    color: var(--dark-mode-font);
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-font);
 }
 
 html.invert .d1-2-3 {
-    color: var(--dark-mode-d1-2-3-font);
-    border-color: var(--dark-mode-d1-2-3-border);
+  color: var(--dark-mode-d1-2-3-font);
+  border-color: var(--dark-mode-d1-2-3-border);
 }
 
 html.invert #divv3 {
-    background-color: var(--dark-mode-bg);
+  background-color: var(--dark-mode-bg);
 }
 
 html.invert #divv3 .img_container {
-    background-color: var(--dark-mode-d1-2-3-bg);
+  background-color: var(--dark-mode-d1-2-3-bg);
 }
 
 html.invert .skill__box {
-    background-color: rgb(221, 221, 221);
+  background-color: rgb(221, 221, 221);
 }
 
 /* 255-x */
 html.invert .list-elem.clicked {
-    background-color: rgb(204, 204, 204);
+  background-color: rgb(204, 204, 204);
 }
 
 html.invert .inverse2 {
-    border-right: 3px solid rgba(200, 200, 200, 1);
-    background-color: rgba(200, 200, 200, 0.3);
+  border-right: 3px solid rgba(200, 200, 200, 1);
+  background-color: rgba(200, 200, 200, 0.3);
 }
 
 .inverse2 {
-    border-bottom: 1px solid rgba(37, 37, 37, 0.2);
+  border-bottom: 1px solid rgba(37, 37, 37, 0.2);
 }
 
 .list-elem.clicked {
-    background-color: var(--skill-list-clicked-clr);
-    color: aliceblue;
+  background-color: var(--skill-list-clicked-clr);
+  color: aliceblue;
 }
 
 html.invert .list-elem.clicked {
-    background-color: rgb(190, 190, 190);
-    color: rgb(62, 62, 62);
+  background-color: rgb(190, 190, 190);
+  color: rgb(62, 62, 62);
 }
 
 html.invert .card-container {
-    filter: invert(1);
-    --card-container-color: rgb(68, 68, 68);
-    --mark-clr: rgb(108, 108, 108);
-    --bg3: rgb(17, 17, 17);
+  filter: invert(1);
+  --card-container-color: rgb(68, 68, 68);
+  --mark-clr: rgb(108, 108, 108);
+  --bg3: rgb(17, 17, 17);
 
-    & .card {
-        background-color: #373737;
-    }
+  & .card {
+    background-color: #373737;
+  }
 }
 
 html.invert .box {
-    filter: invert(1);
-    color: white;
-    --card-container-color: rgb(68, 68, 68);
-    --bg3: rgb(17, 17, 17);
-    --email-box-color: var(--card-container-color);
-    --btn-hover-bg: var(--email-box-color);
-    --text-area-bg: var(--bg3);
-    --input-bg: var(--bg3);
+  filter: invert(1);
+  color: white;
+  --card-container-color: rgb(68, 68, 68);
+  --bg3: rgb(17, 17, 17);
+  --email-box-color: var(--card-container-color);
+  --btn-hover-bg: var(--email-box-color);
+  --text-area-bg: var(--bg3);
+  --input-bg: var(--bg3);
 
-    & input::placeholder {
-        color: rgb(100, 100, 100);
-    }
+  & input::placeholder {
+    color: rgb(100, 100, 100);
+  }
 }
 
 #invert-button {
-    position: relative;
-    z-index: 85;
-    width: 26px;
-    height: 26px;
-    font-size: 0;
-    background-color: transparent;
-    border: none;
-    background-image: url("../../icons/dm3.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  z-index: 85;
+  width: 26px;
+  height: 26px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../icons/dm3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
-    #invert-button {
-        width: 26px;
-        height: 26px;
-    }
+  #invert-button {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+html.invert .xcon {
+  /*background-color: white;*/
+  filter: invert(1);
 }

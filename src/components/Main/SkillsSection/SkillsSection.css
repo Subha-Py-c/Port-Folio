@@ -10,9 +10,11 @@
 
 /* ------- SKILLS ------------------------------------------------------ */
 
-#s2-skills {
-  height: 120vh;
-  /* border: 1px solid black; */
+@media screen and (width < 1025px) {
+  #s2-skills {
+    height: 120vh;
+    /* border: 1px solid black; */
+  }
 }
 
 .d3 {

@@ -1,26 +1,31 @@
 .cursor {
-    z-index: 77;
-    position: fixed;
-    top: 150vh;
-    left: 0;
-    --size: 120px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
+  z-index: 77;
+  position: fixed;
+  top: 150vh;
+  left: 0;
+  --size: 120px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
 
-    background: #fffcef;
-    transition: all 0.5s cubic-bezier(0, 0.02, 0, 1);
-    transform-origin: center center;
+  background: #fffcef;
+  transition: all 0.5s cubic-bezier(0, 0.02, 0, 1);
+  transform-origin: center center;
 
-    mix-blend-mode: difference;
-    pointer-events: none;
-    /* display: none !important; */
-    display: none;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  display: none;
 }
 
 @media ((width > 1224px) and (pointer: fine)) {
-    .cursor {
-        display: block;
-        /* display: none !important; */
-    }
+  .cursor {
+    display: block;
+  }
+}
+
+/* Safari-specific override */
+@supports (hanging-punctuation: first) {
+  .cursor {
+    display: none !important;
+  }
 }
