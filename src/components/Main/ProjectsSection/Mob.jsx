@@ -6,7 +6,7 @@ export const ProjectsSection = () => {
   return (
     <section
       id="s3-projects"
-      className="sec3 pb-[25vh] md:pb-[32vh] lg:pb-[40vh]"
+      className="sec3 pb-[25vh] md:pb-[32vh] lg:pb-[40vh] relative"
     >
       {/* anchor div */}
       <div id="div3" style={{ width: 0, height: 0, opacity: 0 }}></div>
@@ -14,14 +14,14 @@ export const ProjectsSection = () => {
       <h4 id="EN" className="project-heading-container">
         <span
           id="project-heading"
-          className="exp underline-sp headerSpan header__texts"
+          className="exp underline-sp headerSpan header__texts !text-6xl"
           style={{ display: "inline" }}
         >
           Selected Projects
         </span>
       </h4>
 
-      <div className="projects-wrapper full">
+      <div className="projects-wrapper full px-6">
         {projects.map((project) => (
           <div
             key={project.title}

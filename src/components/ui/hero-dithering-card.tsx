@@ -21,8 +21,7 @@ export default function CTASection({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Changed h-[600px] to min-h-[600px] h-fit to wrap content */}
-        <div className="relative overflow-hidden rounded-[48px] border border-border bg-card shadow-sm min-h-[600px] h-fit flex flex-col items-center justify-center duration-500">
+        <div className="relative overflow-hidden rounded-[16px] md:rounded-[48px] border border-border bg-card shadow-sm min-h-[600px] h-[90vh] md:h-fit flex flex-col items-center justify-center duration-500">
           <Suspense fallback={<div className="absolute inset-0 bg-muted/20" />}>
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40 dark:opacity-30 mix-blend-multiply dark:mix-blend-screen">
               <Dithering

@@ -39,7 +39,7 @@ const IntroSection = () => {
             </div>
           </h2>
 
-          <div className="intro__content md:font-[content] uppercase max-w-[100ch] pl-10">
+          <div className="intro__content md:font-[content] uppercase max-w-[100ch] pl-2 md:pl-10">
             <p className="hero-p introduction">
               Made it to my Fifth Semester at{" "}
               <a

@@ -207,10 +207,10 @@ export const ProjectsSection = () => {
   return (
     <div
       ref={containerRef}
-      className="project-container mb-40"
+      className="prwc mb-40"
       onMouseMove={handleMouseMove}
     >
-      <div className="projects-wrapper">
+      <div className="prwx">
         <motion.h1
           id="div3"
           className="exp headerSpan header__texts pointer-events-none z-0 text-center text-6xl md:text-8xl font-serif text-[#1a1a1a] dark:text-white"

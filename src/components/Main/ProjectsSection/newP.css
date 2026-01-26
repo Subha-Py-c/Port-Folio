@@ -3,6 +3,12 @@
   /* border: 1px solid blue; */
 }
 
+/*@media screen and (width <= 768px) {
+  #s3-projects {
+    height: fit-content;
+  }
+}*/
+
 .project-heading-container {
   position: relative;
   margin: 0;
@@ -23,7 +29,7 @@ details {
 }
 
 /* new */
-.project-container {
+.prwc {
   position: relative;
   width: 100%;
   height: 120vh;
@@ -31,11 +37,10 @@ details {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Ensure parent allows absolute positioning of children */
 }
 
 /* Centering the Title Wrapper */
-.projects-wrapper {
+.prwx {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,21 +72,4 @@ details {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 1024px) {
-  #div3 {
-    font-size: 4rem; /* Adjust title size for tablets */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .project-container {
-    height: 180vh; /* More height on mobile to prevent stacking */
-  }
-  .projects-wrapper {
-    top: 10%; /* On mobile, move title up so cards can flow below */
-    transform: translate(-50%, 0);
-  }
 }
