@@ -6,7 +6,7 @@ const Blog = () => {
       className="blog rounded-2xl"
       target="_blank"
       rel="noopener"
-      href="https://www.opencanvas.blog/u/subhajit"
+      href="https://www.opencanvas.institute/u/d4cnd9xb"
     >
       Blog
       <svg

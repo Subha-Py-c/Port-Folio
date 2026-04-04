@@ -1,1589 +1,1490 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Subhajit Gorai" />
-        <title>Subhajit Gorai - Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Subhajit Gorai" />
+    <title>Subhajit Gorai - Developer</title>
 
-        <meta
-            name="description"
-            content="Welcome to the personal portfolio of Subhajit Gorai. Explore my projects, skills, and achievements."
+    <meta
+      name="description"
+      content="Welcome to the personal portfolio of Subhajit Gorai. Explore my projects, skills, and achievements."
+    />
+    <meta
+      name="keywords"
+      content="Subhajit Gorai, IIEST, Portfolio, GitHub Portfolio, Web Developer, Projects, Skills"
+    />
+
+    <!-- open graph meta data-->
+    <meta property="og:title" content="Subhajit Gorai - Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore the professional portfolio of Subhajit Gorai from IIEST. Discover my projects, skills, and achievements."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Subha-Py-c/subhajit/main/src/images/preview-img.webp"
+    />
+    <meta property="og:url" content="https://subhajit.pages.dev" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Subhajit Gorai - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Welcome to the portfolio of Subhajit Gorai. Explore my projects, skills, and achievements."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/Subha-Py-c/subhajit/main/src/images/preview-img.webp"
+    />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://subhajit.pages.dev" />
+
+    <!-- LinkedIn Meta Data -->
+    <meta property="og:site_name" content="Subhajit Gorai - Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Subhajit Gorai",
+        "image": [
+          "https://raw.githubusercontent.com/Subha-Py-c/subhajit/main/src/images/preview-img.webp"
+        ],
+        "datePublished": "2024-05-15",
+        "dateModified": "2024-11-9",
+        "author": {
+          "@type": "Person",
+          "name": "Subhajit Gorai"
+        },
+        "url": "https://subhajit.pages.dev",
+        "sameAs": ["https://Subha-Py-c.github.io/subhajit/"]
+      }
+    </script>
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="jIVdEnFRKf147BsXlqxUbFmbI68bjnY_diljF3hS8RE"
+    />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- loader css here for first loading -->
+    <link
+      rel="preload"
+      href="fonts/dahlia.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      importance="high"
+    />
+    <style>
+      @font-face {
+        font-family: Dahlia;
+        font-style: normal;
+        font-weight: 400;
+        src: url("fonts/dahlia.woff2") format("woff2");
+      }
+
+      #loader {
+        z-index: 999999999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        pointer-events: none;
+        pointer-events: none;
+        background-color: transparent;
+        font-kerning: none;
+
+        & .loading__text {
+          font-family: Dahlia;
+          font-size: 4rem;
+          font-weight: 750;
+          display: grid;
+          place-items: center;
+          width: 300px;
+          height: 150px;
+          height: auto;
+          position: absolute;
+          top: calc(50vh - 75px);
+          left: calc(50vw - 150px);
+          font-kerning: none;
+          background-color: transparent;
+          color: white;
+          opacity: 0;
+
+          @media (max-width: 768px) {
+            font-size: 3rem;
+          }
+
+          & .word {
+            height: fit-content;
+            height: auto;
+            overflow: hidden;
+            display: flex !important;
+          }
+          & .char {
+            height: auto;
+            background-color: transparent;
+          }
+        }
+        & .loader__slide1 {
+          background-color: black;
+          width: 100%;
+          height: 50%;
+        }
+        & .loader__slide2 {
+          background-color: black;
+          width: 100%;
+          height: 50%;
+        }
+      }
+
+      html.invert #loader {
+        filter: invert(1);
+        background-color: transparent;
+      }
+
+      @media screen and (max-width: 768px) {
+        #loader {
+          font-size: 3rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components/hello.css" />
+    <link rel="stylesheet" href="css/components/cursor.css" />
+    <link rel="stylesheet" href="css/components/scrollbar.css" />
+    <link rel="stylesheet" href="css/components/imported-fonts.css" />
+    <link rel="stylesheet" href="css/components/invert-button.css" />
+    <link rel="stylesheet" href="css/components/nav.css" />
+    <link rel="stylesheet" href="css/components/skills.css" />
+    <link rel="stylesheet" href="css/components/projects.css" />
+    <link rel="stylesheet" href="css/components/contacts.css" />
+    <link rel="stylesheet" href="css/components/academics.css" />
+    <link rel="stylesheet" href="css/components/experience.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+  </head>
+
+  <body>
+    <noscript> Please enable JavaScript to visit this website. </noscript>
+
+    <div id="loader" class="loader">
+      <div class="loading__text">Welcome</div>
+      <div class="loader__slide1"></div>
+      <div class="loader__slide2"></div>
+    </div>
+    <!-- loader js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script type="module" src="js/loader.js" defer="defer"></script>
+
+    <a
+      class="blog"
+      target="_blank"
+      rel="noopener"
+      href="https://myopencanvas.pages.dev"
+    >
+      Blog
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
         />
-        <meta
-            name="keywords"
-            content="Subhajit Gorai, IIEST, Portfolio, GitHub Portfolio, Web Developer, Projects, Skills"
-        />
+      </svg>
+    </a>
 
-        <!-- open graph meta data-->
-        <meta
-            property="og:title"
-            content="Subhajit Gorai - Developer Portfolio"
-        />
-        <meta
-            property="og:description"
-            content="Explore the professional portfolio of Subhajit Gorai from IIEST. Discover my projects, skills, and achievements."
-        />
-        <meta
-            property="og:image"
-            content="https://raw.githubusercontent.com/Subha-Py-c/subhajit/main/src/images/preview-img.webp"
-        />
-        <meta property="og:url" content="https://subhajit.pages.dev" />
-        <meta property="og:type" content="website" />
+    <header class="flexed justify-between">
+      <button id="invert-button" class="filters">
+        sun-icon
+        <i id="sun-icon" class="fas fa-sun"></i>
+        <i id="moon-icon" class="fas fa-moon"></i>
+      </button>
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Subhajit Gorai - Portfolio" />
-        <meta
-            name="twitter:description"
-            content="Welcome to the portfolio of Subhajit Gorai. Explore my projects, skills, and achievements."
-        />
-        <meta
-            name="twitter:image"
-            content="https://raw.githubusercontent.com/Subha-Py-c/subhajit/main/src/images/preview-img.webp"
-        />
-
-        <!-- Canonical Link -->
-        <link rel="canonical" href="https://subhajit.pages.dev" />
-
-        <!-- LinkedIn Meta Data -->
-        <meta property="og:site_name" content="Subhajit Gorai - Portfolio" />
-        <meta property="og:locale" content="en_US" />
-
-        <!-- Schema.org markup for Google -->
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Person",
-                "name": "Subhajit Gorai",
-                "image": [
-                    "https://raw.githubusercontent.com/Subha-Py-c/subhajit/main/src/images/preview-img.webp"
-                ],
-                "datePublished": "2024-05-15",
-                "dateModified": "2024-11-9",
-                "author": {
-                    "@type": "Person",
-                    "name": "Subhajit Gorai"
-                },
-                "url": "https://subhajit.pages.dev",
-                "sameAs": ["https://Subha-Py-c.github.io/subhajit/"]
-            }
-        </script>
-
-        <!-- Google Site Verification -->
-        <meta
-            name="google-site-verification"
-            content="jIVdEnFRKf147BsXlqxUbFmbI68bjnY_diljF3hS8RE"
-        />
-
-        <!-- Preconnect to external resources -->
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-        <!-- loader css here for first loading -->
-        <link
-            rel="preload"
-            href="fonts/dahlia.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin="anonymous"
-            importance="high"
-        />
-        <style>
-            @font-face {
-                font-family: Dahlia;
-                font-style: normal;
-                font-weight: 400;
-                src: url("fonts/dahlia.woff2") format("woff2");
-            }
-
-            #loader {
-                z-index: 999999999;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
-                pointer-events: none;
-                pointer-events: none;
-                background-color: transparent;
-                font-kerning: none;
-
-                & .loading__text {
-                    font-family: Dahlia;
-                    font-size: 4rem;
-                    font-weight: 750;
-                    display: grid;
-                    place-items: center;
-                    width: 300px;
-                    height: 150px;
-                    height: auto;
-                    position: absolute;
-                    top: calc(50vh - 75px);
-                    left: calc(50vw - 150px);
-                    font-kerning: none;
-                    background-color: transparent;
-                    color: white;
-                    opacity: 0;
-
-                    @media (max-width: 768px) {
-                        font-size: 3rem;
-                    }
-
-                    & .word {
-                        height: fit-content;
-                        height: auto;
-                        overflow: hidden;
-                        display: flex !important;
-                    }
-                    & .char {
-                        height: auto;
-                        background-color: transparent;
-                    }
-                }
-                & .loader__slide1 {
-                    background-color: black;
-                    width: 100%;
-                    height: 50%;
-                }
-                & .loader__slide2 {
-                    background-color: black;
-                    width: 100%;
-                    height: 50%;
-                }
-            }
-
-            html.invert #loader {
-                filter: invert(1);
-                background-color: transparent;
-            }
-
-            @media screen and (max-width: 768px) {
-                #loader {
-                    font-size: 3rem;
-                }
-            }
-        </style>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/components/hello.css" />
-        <link rel="stylesheet" href="css/components/cursor.css" />
-        <link rel="stylesheet" href="css/components/scrollbar.css" />
-        <link rel="stylesheet" href="css/components/imported-fonts.css" />
-        <link rel="stylesheet" href="css/components/invert-button.css" />
-        <link rel="stylesheet" href="css/components/nav.css" />
-        <link rel="stylesheet" href="css/components/skills.css" />
-        <link rel="stylesheet" href="css/components/projects.css" />
-        <link rel="stylesheet" href="css/components/contacts.css" />
-        <link rel="stylesheet" href="css/components/academics.css" />
-        <link rel="stylesheet" href="css/components/experience.css" />
-        <link rel="stylesheet" href="css/utils.css" />
-    </head>
-
-    <body>
-        <noscript> Please enable JavaScript to visit this website. </noscript>
-
-        <div id="loader" class="loader">
-            <div class="loading__text">Welcome</div>
-            <div class="loader__slide1"></div>
-            <div class="loader__slide2"></div>
-        </div>
-        <!-- loader js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <script src="https://unpkg.com/split-type"></script>
-        <script type="module" src="js/loader.js" defer="defer"></script>
-
-        <a
-            class="blog"
-            target="_blank"
-            rel="noopener"
-            href="https://myopencanvas.pages.dev"
+      <!-- nav ham icon -->
+      <div class="nav-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="30"
+          height="30"
+          viewBox="0 0 50 50"
+          class="nav-icon"
+          id="nav-icon"
         >
-            Blog
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-            </svg>
-        </a>
+          <path
+            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="20"
+          height="20"
+          viewBox="0 0 50 50"
+          class="nav-icon"
+          id="nav-icon-2"
+        >
+          <path
+            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"
+          ></path>
+        </svg>
+      </div>
 
-        <header class="flexed justify-between">
-            <button id="invert-button" class="filters">
-                sun-icon
-                <i id="sun-icon" class="fas fa-sun"></i>
-                <i id="moon-icon" class="fas fa-moon"></i>
-            </button>
+      <!-- nav close icon -->
+      <div id="cl-icon" class="close-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="100"
+          viewBox="0 -960 960 960"
+          width="100"
+          fill="#000"
+        >
+          <path
+            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+          />
+        </svg>
+      </div>
+    </header>
 
-            <!-- nav ham icon -->
-            <div class="nav-menu">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 50 50"
-                    class="nav-icon"
-                    id="nav-icon"
-                >
-                    <path
-                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"
-                    ></path>
-                </svg>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 50 50"
-                    class="nav-icon"
-                    id="nav-icon-2"
-                >
-                    <path
-                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"
-                    ></path>
-                </svg>
-            </div>
-
-            <!-- nav close icon -->
-            <div id="cl-icon" class="close-icon">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="100"
-                    viewBox="0 -960 960 960"
-                    width="100"
-                    fill="#000"
-                >
-                    <path
-                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                    />
-                </svg>
-            </div>
-        </header>
-
-        <!-- nav -->
-        <div class="nav flexed" id="nav">
-            <div class="ul full" id="ul">
-                <div class="li">
-                    <span class="sp">
-                        <a href="#s1" class="link link--thebe">Home</a>
-                    </span>
-                </div>
-                <div class="li">
-                    <span class="sp">
-                        <a href="#EX" class="link link--thebe">Experience</a>
-                    </span>
-                </div>
-                <div class="li">
-                    <span class="sp">
-                        <a href="#s-last" class="link link--thebe">Academics</a>
-                    </span>
-                </div>
-                <div class="li">
-                    <span class="sp">
-                        <a href="#SK" class="link link--thebe">Skills</a>
-                    </span>
-                </div>
-                <div class="li">
-                    <span class="sp">
-                        <a href="#div3" class="link link--thebe">Projects</a>
-                    </span>
-                </div>
-                <div class="li">
-                    <span class="sp">
-                        <a href="#s4-contacts" class="link link--thebe"
-                            >Contact</a
-                        >
-                    </span>
-                </div>
-            </div>
-            <script>
-                const liElms = document.querySelectorAll("#nav .li");
-
-                liElms.forEach((li) => {
-                    const insideAnchor = li.querySelector("a.link");
-                    li.addEventListener("mouseover", () => {
-                        insideAnchor.classList.add("hover-effect");
-                    });
-                    li.addEventListener("mouseout", () => {
-                        insideAnchor.classList.remove("hover-effect");
-                    });
-                });
-            </script>
+    <!-- nav -->
+    <div class="nav flexed" id="nav">
+      <div class="ul full" id="ul">
+        <div class="li">
+          <span class="sp">
+            <a href="#s1" class="link link--thebe">Home</a>
+          </span>
         </div>
+        <div class="li">
+          <span class="sp">
+            <a href="#EX" class="link link--thebe">Experience</a>
+          </span>
+        </div>
+        <div class="li">
+          <span class="sp">
+            <a href="#s-last" class="link link--thebe">Academics</a>
+          </span>
+        </div>
+        <div class="li">
+          <span class="sp">
+            <a href="#SK" class="link link--thebe">Skills</a>
+          </span>
+        </div>
+        <div class="li">
+          <span class="sp">
+            <a href="#div3" class="link link--thebe">Projects</a>
+          </span>
+        </div>
+        <div class="li">
+          <span class="sp">
+            <a href="#s4-contacts" class="link link--thebe">Contact</a>
+          </span>
+        </div>
+      </div>
+      <script>
+        const liElms = document.querySelectorAll("#nav .li");
 
-        <main role="main">
-            <!-- Intro -->
-            <section id="s1" class="sec1">
-                <div class="section about-section">
-                    <div class="grid grid-full">
-                        <h2 class="hero-h2">
-                            <span class="">I</span>
-                            <span class="">Am</span>
-                            <span id="b-c"
-                                >Subha
-                                <div class="disable imgShow">/Dev</div></span
-                            >
-                        </h2>
-                        <div class="about-content is-mt-l col-9 col-md-12">
-                            <p class="hero-p col-12 is-mb-ms introduction">
-                                MERN &amp; Flask Stack Developer / Web Designer.
-                                Information Technology student at
-                                <a
-                                    class="college_url"
-                                    href="https://www.iiests.ac.in"
-                                    target="_blank"
-                                >
-                                    IIEST Shibpur.</a
-                                >
-                                Interested in Deep Learning and Blockchain
-                                technologies.
-                                <span id="profileImg" class="flexed"
-                                    ><img src="images/me2.png" class="ta-ta"
-                                /></span>
-                            </p>
-                            <p class="hero-p col-6 col-xs-12 is-mb-s is-xs">
-                                Nothing more to say, thanks for visiting my
-                                website. Don't forget to explore my projects.
-                                I'm eager to collaborate with interested people.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        liElms.forEach((li) => {
+          const insideAnchor = li.querySelector("a.link");
+          li.addEventListener("mouseover", () => {
+            insideAnchor.classList.add("hover-effect");
+          });
+          li.addEventListener("mouseout", () => {
+            insideAnchor.classList.remove("hover-effect");
+          });
+        });
+      </script>
+    </div>
 
-            <!-- experience -->
-            <section
-                class="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]"
+    <main role="main">
+      <!-- Intro -->
+      <section id="s1" class="sec1">
+        <div class="section about-section">
+          <div class="grid grid-full">
+            <h2 class="hero-h2">
+              <span class="">I</span>
+              <span class="">Am</span>
+              <span id="b-c"
+                >Subha
+                <div class="disable imgShow">/Dev</div></span
+              >
+            </h2>
+            <div class="about-content is-mt-l col-9 col-md-12">
+              <p class="hero-p col-12 is-mb-ms introduction">
+                MERN &amp; Flask Stack Developer / Web Designer. Information
+                Technology student at
+                <a
+                  class="college_url"
+                  href="https://www.iiests.ac.in"
+                  target="_blank"
+                >
+                  IIEST Shibpur.</a
+                >
+                Interested in Deep Learning and Blockchain technologies.
+                <span id="profileImg" class="flexed"
+                  ><img src="images/me2.png" class="ta-ta"
+                /></span>
+              </p>
+              <p class="hero-p col-6 col-xs-12 is-mb-s is-xs">
+                Nothing more to say, thanks for visiting my website. Don't
+                forget to explore my projects. I'm eager to collaborate with
+                interested people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- experience -->
+      <section
+        class="experience-section relative w-[100vw] h-fit pt-[0vh] md:pt-[7.5vh] lg:pt-[15vh] pb-[10vh] md:pb-[15vh] lg:pb-[25vh]"
+      >
+        <h4 id="EX">
+          <span
+            class="exps underline-sp headerSpan header__texts experience--heading"
+            style="display: inline !important"
+          >
+            Experience
+          </span>
+        </h4>
+        <div
+          class="work-container relative w-full h-fit pl-[20px] md:pl-[100px] pr-[20px] md:pr-[120px] pt-[15px] md:pt-[30px] text-xl md:text-2xl"
+        >
+          <div
+            class="work1 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group"
+          >
+            <div class="work-logo w-14 flex justify-center items-center">
+              <img
+                class="size-auto object-contain scale-75 ta-ta"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEuMTMgNTguNjEiPgoJPGRlZnM+CgkJPHN0eWxlPgoJCQkuY2xzLTEgewoJCQlmaWxsOiAjZmJiYzA0OwoJCQl9CgoJCQkuY2xzLTIgewoJCQlmaWxsOiAjNDI4NWY0OwoJCQl9CgoJCQkuY2xzLTMgewoJCQlmaWxsOiAjMzRhODUzOwoJCQl9CgoJCQkuY2xzLTQgewoJCQlmaWxsOiAjZWE0MzM1OwoJCQl9CgkJPC9zdHlsZT4KCTwvZGVmcz4KCTxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJjbHMtNCIKCQkJCWQ9Ik0yOC44NCwyOS40MmwxOS42Ny0xMS4zNmM0LjYzLTIuNjcsNi4yMS04LjU5LDMuNTQtMTMuMjJDNDkuMzgsLjIxLDQzLjQ2LTEuMzgsMzguODMsMS4zTDQuODQsMjAuOTJsMjQsOC41WiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0yIgoJCQkJZD0iTTQzLjY2LDU4LjYxYzMuMzQsMCw2LjYtMS43NCw4LjM5LTQuODQsMi42Ny00LjYzLDEuMDktMTAuNTUtMy41NC0xMy4yMkwxNC41MiwyMC45M2MtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NHMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTMsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0xIgoJCQkJZD0iTTc3LjQ3LDU4LjYxYzEuNjQsMCwzLjMxLS40Miw0LjgzLTEuM2wzMy45OS0xOS42Mi0yMy42OS04LjY3LTE5Ljk3LDExLjUzYy00LjYzLDIuNjctNi4yMSw4LjU5LTMuNTQsMTMuMjIsMS43OCwzLjEsNS4wNCw0Ljg0LDguMzgsNC44NFoiIC8+CgkJCTxwYXRoIGNsYXNzPSJjbHMtMyIKCQkJCWQ9Ik0xMTEuNDQsMzguOTljMy4zNCwwLDYuNi0xLjc0LDguMzktNC44NCwyLjY3LTQuNjMsMS4wOS0xMC41NS0zLjU0LTEzLjIyTDgyLjMsMS4zMWMtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NC0yLjY3LDQuNjMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTIsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQk8L2c+Cgk8L2c+Cjwvc3ZnPgo="
+                alt=""
+              />
+            </div>
+            <div class="work-position w-fit flex-1 px-2">
+              GDSC[Google Developer Student Club] IIEST SHibpur, Development
+              Team Member
+            </div>
+            <div
+              class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit"
             >
-                <h4 id="EX">
-                    <span
-                        class="exps underline-sp headerSpan header__texts experience--heading"
-                        style="display: inline !important"
-                    >
-                        Experience
-                    </span>
-                </h4>
+              October 2024 - Present
+            </div>
+          </div>
+          <div
+            class="work2 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group"
+          >
+            <div
+              class="work-logo w-14 flex justify-center items-center overflow-hidden rounded"
+            >
+              <img
+                class="size-auto object-contain scale-75 bg-green-950 ta-ta overflow-hidden rounded"
+                src="https://www.socialwinterofcode.com/SWOC_W_Black.png"
+                alt=""
+              />
+            </div>
+            <div class="work-position w-fit flex-1 px-2">
+              SWOC[Social Winter Of Code] Contributor
+            </div>
+            <div
+              class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit"
+            >
+              December 2024
+            </div>
+          </div>
+          <div
+            class="work3 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group"
+          >
+            <div class="work-logo w-14 flex justify-center items-center">
+              <img
+                class="size-auto object-contain scale-75 bg-green-950 ta-ta"
+                src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-11--beige.2b2fdfcb.svg"
+                alt=""
+              />
+            </div>
+            <div class="work-position w-fit flex-1 px-2">
+              Completed HactoberFest'24 OpenSource Contribution Event
+            </div>
+            <div
+              class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit"
+            >
+              October 2024
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACADEMICS -->
+      <section id="s-last" class="sec-L">
+        <div
+          itemscope
+          itemtype="http://schema.org/EducationalOccupationalCredential"
+          class="academic__container"
+        >
+          <div class="acad__header header__texts">
+            <span
+              id="academic__header"
+              class="underline-sp headerSpan"
+              style="display: inline !important"
+            >
+              Academics
+            </span>
+          </div>
+
+          <div class="acad__list">
+            <div class="acad__institutions">
+              <div class="ins__container">
                 <div
-                    class="work-container relative w-full h-fit pl-[20px] md:pl-[100px] pr-[20px] md:pr-[120px] pt-[15px] md:pt-[30px] text-xl md:text-2xl"
+                  itemscope
+                  itemtype="http://schema.org/EducationalOccupationalCredential"
+                  class="institute__data"
                 >
-                    <div
-                        class="work1 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group"
-                    >
-                        <div
-                            class="work-logo w-14 flex justify-center items-center"
-                        >
-                            <img
-                                class="size-auto object-contain scale-75 ta-ta"
-                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEuMTMgNTguNjEiPgoJPGRlZnM+CgkJPHN0eWxlPgoJCQkuY2xzLTEgewoJCQlmaWxsOiAjZmJiYzA0OwoJCQl9CgoJCQkuY2xzLTIgewoJCQlmaWxsOiAjNDI4NWY0OwoJCQl9CgoJCQkuY2xzLTMgewoJCQlmaWxsOiAjMzRhODUzOwoJCQl9CgoJCQkuY2xzLTQgewoJCQlmaWxsOiAjZWE0MzM1OwoJCQl9CgkJPC9zdHlsZT4KCTwvZGVmcz4KCTxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJjbHMtNCIKCQkJCWQ9Ik0yOC44NCwyOS40MmwxOS42Ny0xMS4zNmM0LjYzLTIuNjcsNi4yMS04LjU5LDMuNTQtMTMuMjJDNDkuMzgsLjIxLDQzLjQ2LTEuMzgsMzguODMsMS4zTDQuODQsMjAuOTJsMjQsOC41WiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0yIgoJCQkJZD0iTTQzLjY2LDU4LjYxYzMuMzQsMCw2LjYtMS43NCw4LjM5LTQuODQsMi42Ny00LjYzLDEuMDktMTAuNTUtMy41NC0xMy4yMkwxNC41MiwyMC45M2MtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NHMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTMsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQkJPHBhdGggY2xhc3M9ImNscy0xIgoJCQkJZD0iTTc3LjQ3LDU4LjYxYzEuNjQsMCwzLjMxLS40Miw0LjgzLTEuM2wzMy45OS0xOS42Mi0yMy42OS04LjY3LTE5Ljk3LDExLjUzYy00LjYzLDIuNjctNi4yMSw4LjU5LTMuNTQsMTMuMjIsMS43OCwzLjEsNS4wNCw0Ljg0LDguMzgsNC44NFoiIC8+CgkJCTxwYXRoIGNsYXNzPSJjbHMtMyIKCQkJCWQ9Ik0xMTEuNDQsMzguOTljMy4zNCwwLDYuNi0xLjc0LDguMzktNC44NCwyLjY3LTQuNjMsMS4wOS0xMC41NS0zLjU0LTEzLjIyTDgyLjMsMS4zMWMtNC42My0yLjY3LTEwLjU1LTEuMDktMTMuMjIsMy41NC0yLjY3LDQuNjMtMS4wOSwxMC41NSwzLjU0LDEzLjIybDMzLjk5LDE5LjYyYzEuNTIsLjg4LDMuMTksMS4zLDQuODMsMS4zWiIgLz4KCQk8L2c+Cgk8L2c+Cjwvc3ZnPgo="
-                                alt=""
-                            />
-                        </div>
-                        <div class="work-position w-fit flex-1 px-2">
-                            GDSC[Google Developer Student Club] IIEST SHibpur,
-                            Development Team Member
-                        </div>
-                        <div
-                            class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit"
-                        >
-                            October 2024 - Present
-                        </div>
-                    </div>
-                    <div
-                        class="work2 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group"
-                    >
-                        <div
-                            class="work-logo w-14 flex justify-center items-center overflow-hidden rounded"
-                        >
-                            <img
-                                class="size-auto object-contain scale-75 bg-green-950 ta-ta overflow-hidden rounded"
-                                src="https://www.socialwinterofcode.com/SWOC_W_Black.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="work-position w-fit flex-1 px-2">
-                            SWOC[Social Winter Of Code] Contributor
-                        </div>
-                        <div
-                            class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit"
-                        >
-                            December 2024
-                        </div>
-                    </div>
-                    <div
-                        class="work3 w-full flex items-center min-h-[60px] border-b border-b-slate-800 border-dashed group"
-                    >
-                        <div
-                            class="work-logo w-14 flex justify-center items-center"
-                        >
-                            <img
-                                class="size-auto object-contain scale-75 bg-green-950 ta-ta"
-                                src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-11--beige.2b2fdfcb.svg"
-                                alt=""
-                            />
-                        </div>
-                        <div class="work-position w-fit flex-1 px-2">
-                            Completed HactoberFest'24 OpenSource Contribution
-                            Event
-                        </div>
-                        <div
-                            class="duration w-fit px-2 max-w-[80px] md:max-w-[180px] lg:max-w-fit"
-                        >
-                            October 2024
-                        </div>
-                    </div>
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <strong class="inst" itemprop="educationalLevel">
+                        Pimary Studies
+                      </strong>
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em>Institution:</em>
+                      <span itemprop="name">Narendranath School</span>
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="year">Year:</em>
+                      2010-2015
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="grade">Grade:</em>
+                      A+
+                    </span>
+                  </span>
                 </div>
-            </section>
-
-            <!-- ACADEMICS -->
-            <section id="s-last" class="sec-L">
+                <div class="ball-pointer" id="ball-pointer-1"></div>
+              </div>
+              <div class="academics__card__container ta-ta">
+                <div class="acad__card card2 firstcard2">
+                  <img
+                    class="lazy-load"
+                    loading="lazy"
+                    src="images/girl.webp"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="acad__institutions">
+              <div class="ins__container">
                 <div
-                    itemscope
-                    itemtype="http://schema.org/EducationalOccupationalCredential"
-                    class="academic__container"
+                  itemscope
+                  itemtype="http://schema.org/EducationalOccupationalCredential"
+                  class="institute__data"
                 >
-                    <div class="acad__header header__texts">
-                        <span
-                            id="academic__header"
-                            class="underline-sp headerSpan"
-                            style="display: inline !important"
-                        >
-                            Academics
-                        </span>
-                    </div>
-
-                    <div class="acad__list">
-                        <div class="acad__institutions">
-                            <div class="ins__container">
-                                <div
-                                    itemscope
-                                    itemtype="http://schema.org/EducationalOccupationalCredential"
-                                    class="institute__data"
-                                >
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <strong
-                                                class="inst"
-                                                itemprop="educationalLevel"
-                                            >
-                                                Pimary Studies
-                                            </strong>
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em>Institution:</em>
-                                            <span itemprop="name"
-                                                >Narendranath School</span
-                                            >
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="year">Year:</em>
-                                            2010-2015
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="grade">Grade:</em>
-                                            A+
-                                        </span>
-                                    </span>
-                                </div>
-                                <div
-                                    class="ball-pointer"
-                                    id="ball-pointer-1"
-                                ></div>
-                            </div>
-                            <div class="academics__card__container ta-ta">
-                                <div class="acad__card card2 firstcard2">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/girl.webp"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acad__institutions">
-                            <div class="ins__container">
-                                <div
-                                    itemscope
-                                    itemtype="http://schema.org/EducationalOccupationalCredential"
-                                    class="institute__data"
-                                >
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <strong
-                                                class="inst"
-                                                itemprop="educationalLevel"
-                                            >
-                                                Secondary Education
-                                            </strong>
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em>Institution:</em>
-                                            <span itemprop="name"
-                                                >Bishnupur High School</span
-                                            >
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="year">Year:</em>
-                                            2015-2021
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="grade">Grade:</em>
-                                            96.42%
-                                        </span>
-                                    </span>
-                                </div>
-                                <div
-                                    class="ball-pointer"
-                                    id="ball-pointer-2"
-                                ></div>
-                            </div>
-                            <div class="academics__card__container ta-ta">
-                                <div class="acad__card card1 firstcard1">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/bhs3.gif"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acad__institutions">
-                            <div class="ins__container">
-                                <div
-                                    itemscope
-                                    itemtype="http://schema.org/EducationalOccupationalCredential"
-                                    class="institute__data"
-                                >
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <strong
-                                                class="inst"
-                                                itemprop="educationalLevel"
-                                            >
-                                                Higher Secondary Education
-                                            </strong>
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em>Institution:</em>
-                                            <span itemprop="name"
-                                                >Bishnupur High School</span
-                                            >
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="year">Year:</em>
-                                            2021-2023
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="grade">Grade:</em>
-                                            88%
-                                        </span>
-                                    </span>
-                                </div>
-                                <div
-                                    class="ball-pointer"
-                                    id="ball-pointer-3"
-                                ></div>
-                            </div>
-                            <div class="academics__card__container ta-ta">
-                                <div class="acad__card card2 secondcard2">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/bhs2.jpg"
-                                    />
-                                </div>
-                                <div class="acad__card card3 firstcard3">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/bhs1.gif"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="acad__institutions">
-                            <div class="ins__container">
-                                <div
-                                    itemscope
-                                    itemtype="http://schema.org/EducationalOccupationalCredential"
-                                    class="institute__data"
-                                >
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <strong
-                                                class="inst"
-                                                itemprop="credentialCategory"
-                                            >
-                                                B.Tech in Information Technology
-                                            </strong>
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em>Institution:</em>
-                                            <span itemprop="name"
-                                                >IIEST Shibpur</span
-                                            >
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="year">Year:</em>
-                                            2023-present
-                                        </span>
-                                    </span>
-                                    <br />
-                                    <span class="s2 relative">
-                                        <span class="s3 relative">
-                                            <em class="grade">Grade:</em>
-                                            8.46
-                                        </span>
-                                    </span>
-                                </div>
-                                <div
-                                    class="ball-pointer"
-                                    id="ball-pointer-4"
-                                ></div>
-                            </div>
-                            <div class="academics__card__container ta-ta">
-                                <div class="acad__card card3 secondcard3">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/iiest1.jpeg"
-                                    />
-                                </div>
-                                <div class="acad__card card1 secondcard1">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/iiest4.jpeg"
-                                    />
-                                </div>
-                                <div class="acad__card card2 thirdcard2">
-                                    <img
-                                        class="lazy-load"
-                                        loading="lazy"
-                                        src="images/iiest6.jpeg"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SKILLS -->
-            <section id="s2-skills" class="sec2">
-                <div id="SK" class="con d3">
-                    <h4 class="w" id="SS">
-                        <span
-                            id="skill"
-                            class="exps underline-sp headerSpan header__texts"
-                            style="display: inline !important"
-                        >
-                            Skills
-                        </span>
-                    </h4>
-
-                    <!-- for desktops -->
-                    <div class="skill-wrapper">
-                        <div class="card-container">
-                            <div class="card">
-                                <!-- web dev -->
-                                <div data-value="70%" class="card-elem">
-                                    <p>
-                                        <em><mark>Web Development</mark></em>
-                                    </p>
-                                    <em><u>Frontend:</u></em>
-                                    <br />
-                                    HTML, CSS, JavaScript, SASS, Tailwind CSS,
-                                    <b>jQuery, ReactJS</b>
-                                    <br />
-                                    <br />
-                                    <em><u>Backend:</u></em>
-                                    <br />
-                                    Node.js, Express,
-                                    <b>Flask</b>
-                                    ,SQL databases [SQLite, PostgreSQL]
-                                    <br />
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    70%
-                                </div>
-                                <!-- ui-ux -->
-                                <div data-value="70%" class="card-elem">
-                                    <p>
-                                        <em><mark>UI/UX</mark></em>
-                                    </p>
-                                    <em><u>Tools:</u></em>
-                                    <br />
-                                    Figma, GIMP
-                                    <br />
-                                    <br />
-                                    <em><u>Libraries:</u></em>
-                                    <br />
-                                    GSAP, AOS, tilt.js, Typed.js,
-                                    LENIS(locomotive scroll), Split-type
-                                    <br />
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    70%
-                                </div>
-                                <!-- dsa -->
-                                <div data-value="85%" class="card-elem">
-                                    <p>
-                                        <em><mark>Data Structures</mark></em>
-                                        <!-- and Algorithms -->
-                                    </p>
-                                    <em><u>Languages:</u></em>
-                                    <br />
-                                    Python, C, C++
-                                    <br />
-                                    <br />
-                                    <em><u>Concepts:</u></em>
-                                    <br />
-                                    Time & Space Complexity, Function call
-                                    Stack, Array, String, Stack, Queue,
-                                    LinkedList, Tree, Searching, Sorting
-                                    <br />
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    85%
-                                </div>
-                                <!-- python -->
-                                <div data-value="85%" class="card-elem">
-                                    <p>
-                                        <em><mark>Python</mark></em>
-                                    </p>
-                                    <em><u>Concepts:</u></em>
-                                    <br />
-                                    OOPs, DSA, Data Visualisation using numpy &
-                                    matplotlib[small scale], Web
-                                    Development[flask]
-                                    <br />
-                                    <br />
-                                    <em
-                                        ><u
-                                            >Some libraries I have used in
-                                            personal projects:</u
-                                        ></em
-                                    >
-                                    <br />
-                                    • numpy, matplotlib, PIL, Tesseract, OpenCV,
-                                    reportlab, bs4, selenium etc
-                                    <br />
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    85%
-                                </div>
-                                <!-- scraping -->
-                                <div data-value="60%" class="card-elem">
-                                    <p>
-                                        <em><mark>Web Scraping</mark></em>
-                                    </p>
-                                    <em><u>Libraries:</u></em>
-                                    <br />
-                                    requests, BeautifulSoup, Selenium
-                                    <br />
-                                    <br />
-                                    <em><u>api:</u></em>
-                                    <br />
-                                    Scrapeowl
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    60%
-                                </div>
-                                <!-- git -->
-                                <div data-value="70%" class="card-elem">
-                                    <p>
-                                        <em><mark>Collaboration</mark></em>
-                                    </p>
-                                    Can easily collaborate with team members
-                                    using GitHub
-                                    <br />
-                                    <em><u>Collaboration experience:</u></em>
-                                    <br />
-                                    Hactoberfest'24, College GDG Dev Team
-                                    members
-                                    <br />
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    70%
-                                </div>
-                                <!-- others -->
-                                <div data-value="50%" class="card-elem">
-                                    <p>
-                                        <em><mark>Telegram Bots</mark></em>
-                                    </p>
-                                    I have created several telgram bots.
-                                    <br />
-                                    <br />
-                                    <p>
-                                        <em><mark>Scripting</mark></em>
-                                    </p>
-                                    Linux and MAC OS shell scripting, and python
-                                    Scripting for automation
-                                    <br />
-                                    <br />
-                                    <span class="progress-bar flexed">
-                                        <span class="growth"></span>
-                                    </span>
-                                    50%
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            id="skill-list"
-                            class="s-list"
-                            data-tilt-max="5"
-                            data-tilt-speed="400"
-                            data-tilt-perspective="500"
-                        >
-                            <!-- web dev -->
-                            <div class="first-x inverse2 list-elem">
-                                Web Development
-                                <span class="strech active">•••</span>
-                            </div>
-                            <!-- ui-ux -->
-                            <div class="middle inverse2 list-elem">
-                                UI/UX
-                                <span class="strech">•••</span>
-                            </div>
-                            <!-- dsa -->
-                            <div class="middle inverse2 list-elem">
-                                Data Structures
-                                <span class="strech">•••</span>
-                            </div>
-                            <!-- python -->
-                            <div class="middle inverse2 list-elem">
-                                Python
-                                <span class="strech">•••</span>
-                            </div>
-                            <!-- scraping -->
-                            <div class="middle inverse2 list-elem">
-                                Web Scraping
-                                <span class="strech">•••</span>
-                            </div>
-                            <!-- git -->
-                            <div class="middle inverse2 list-elem">
-                                Collaboration
-                                <span class="strech">•••</span>
-                            </div>
-                            <!-- scripting -->
-                            <div class="lst middle inverse2 list-elem">
-                                Others
-                                <span class="strech">•••</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- For mobiles -->
-                    <div class="skill__container">
-                        <div data-value="70%" class="skill__box">
-                            <img src="assets/icons/web-dev.svg" />
-                            Web Development
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="70%" class="skill__box">
-                            <img src="assets/icons/ui-ux.svg" />
-                            UI-UX
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="85%" class="skill__box">
-                            <img src="assets/icons/data-str.svg" />
-                            Data Structures
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="85%" class="skill__box">
-                            <img src="assets/icons/python.svg" />
-                            PYTHON
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="60%" class="skill__box">
-                            <img src="assets/icons/web-scraping.svg" />
-                            Web Scraping
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="70%" class="skill__box">
-                            <img src="assets/icons/node.svg" />
-                            Node + Express
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="65%" class="skill__box">
-                            <img src="assets/icons/react.svg" />
-                            React
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="55%" class="skill__box">
-                            <img src="assets/icons/js.svg" />
-                            JavaScript
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="70%" class="skill__box">
-                            <img src="assets/icons/git.svg" />
-                            Git & GitHub
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-
-                        <div data-value="85%" class="skill__box">
-                            <img src="assets/icons/shell.svg" />
-                            Flask
-                            <span class="progress-bar flexed">
-                                <span class="growth ta-ta"></span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PROJECTS -->
-            <section id="s3-projects" class="sec3">
-                <!-- anchor div -->
-                <div id="div3" style="width: 0; height: 0; opacity: 0"></div>
-
-                <h4 id="EN" class="project-heading-container">
-                    <span
-                        id="project-heading"
-                        class="exp underline-sp headerSpan header__texts"
-                        style="display: inline !important"
-                    >
-                        Selected Projects
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <strong class="inst" itemprop="educationalLevel">
+                        Secondary Education
+                      </strong>
                     </span>
-                </h4>
-                <div class="projects-wrapper full">
-                    <!-- lumifeed -->
-                    <div class="project project1">
-                        <div class="project__data">
-                            <h2>LumiFeed</h2>
-                            <details>
-                                <summary>
-                                    A neat platform for reading news.
-                                </summary>
-                                A webapp with clutterless UI to read news
-                                without advertisements, along with summary of
-                                each news available. Many other mindblowing
-                                features available.
-                                <em>-- Solo Project</em>
-                                Technologies used:
-                                <ul>
-                                    <li>flask (for backend)</li>
-                                    <li>SQL database [postgresql & sqlite]</li>
-                                    <li>JavaScript AJAX and Fetch api</li>
-                                    <li>Web Scraping [requests, bs4]</li>
-                                    <li>HTML, CSS, SASS, figma</li>
-                                    <li>AI Summary api</li>
-                                </ul>
-                            </details>
-                            <a
-                                rel="noopener"
-                                target="_blank"
-                                href="https://lumifeed.up.railway.app"
-                            >
-                                visit
-                                <img src="assets/icons/open-in-tab.svg" />
-                            </a>
-                        </div>
-                        <div class="project__image ta-ta">
-                            <img src="images/projects-imgs/lumifeed.jpeg" />
-                        </div>
-                    </div>
-
-                    <!-- encryptease -->
-                    <div class="project project2">
-                        <div class="project__data">
-                            <h2>encryptease</h2>
-                            <details>
-                                <summary>
-                                    Encrypt your data easily. (fun app)
-                                </summary>
-                                A powerful webapp to encrypt messages and files
-                                easily that are highly secure and cannot be
-                                decrypted without the encryption KEY.
-                                <em>-- Solo Project</em>
-                                Technologies used:
-                                <ul>
-                                    <li>flask</li>
-                                    <li>Cryptography Module (python)</li>
-                                    <li>JavaScript AJAX</li>
-                                    <li>HTML - CSS - JS</li>
-                                </ul>
-                            </details>
-                            <a
-                                rel="noopener"
-                                target="_blank"
-                                href="https://encryptease.pythonanywhere.com"
-                            >
-                                visit
-                                <img src="assets/icons/open-in-tab.svg" />
-                            </a>
-                        </div>
-                        <div class="project__image ta-ta">
-                            <img src="images/projects-imgs/encryptease.jpeg" />
-                        </div>
-                    </div>
-
-                    <!-- portfolio -->
-                    <div class="project project3">
-                        <div class="project__data">
-                            <h2>Portfolio</h2>
-                            <details>
-                                <summary>
-                                    This portfolio website you are in right now.
-                                </summary>
-                                A portfolio Website to easily introduce me to
-                                everyone.
-                                <em>-- solo project</em>
-                                Technologies used:
-                                <ul>
-                                    <li>HTML-CSS-JavaScript</li>
-                                    <li>GSAP</li>
-                                    <li>locomotive scroll</li>
-                                    <li>UI-UX</li>
-                                    <li>figma</li>
-                                </ul>
-                            </details>
-                            <a
-                                rel="noopener"
-                                target="_blank"
-                                href="https://github.com/Subha-Py-c/subhajit"
-                            >
-                                see code in github
-                                <img src="assets/icons/open-in-tab.svg" />
-                            </a>
-                        </div>
-                        <div class="project__image ta-ta">
-                            <img src="images/projects-imgs/portfolio.jpeg" />
-                        </div>
-                    </div>
-
-                    <!-- opencanvas -->
-                    <div class="project project4">
-                        <div class="project__data">
-                            <h2>opencanvas.blog</h2>
-                            <details>
-                                <summary>
-                                    A retro blogging site for everyone.
-                                </summary>
-                                Currently IN MAKING. various blogs and journals
-                                will be published here later on.
-                                <em>-- Collaborative project</em>
-                                Technologies used:
-                                <ul>
-                                    <li>
-                                        Mongo - Express - React - Node [MERN]
-                                    </li>
-                                    <li>TailwindCSS &amp; SASS</li>
-                                    <li>websocket</li>
-                                    <li>...</li>
-                                </ul>
-                            </details>
-                            <a
-                                rel="noopener"
-                                target="_blank"
-                                href="https://dream-world-coder.github.io/opencanvas/hero/"
-                            >
-                                visit [incomple now :(]
-                                <img src="assets/icons/open-in-tab.svg" />
-                            </a>
-                        </div>
-                        <div class="project__image ta-ta">
-                            <img src="images/projects-imgs/opencanvas.jpeg" />
-                        </div>
-                    </div>
-
-                    <!-- zentunes / relaxing melody -->
-                    <div class="project project5">
-                        <div class="project__data">
-                            <h2>Zentunes</h2>
-                            <details>
-                                <summary>Ear-soothing music anywhere.</summary>
-                                A music streaming platform for retro lovers.
-                                <em>-- Solo Project.</em>
-                                Some development is yet to do, sorry!!.
-                                <br />
-                                <br />
-                                Technologies used:
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>SCSS</li>
-                                    <li>React</li>
-                                </ul>
-                            </details>
-                            <a
-                                rel="noopener"
-                                target="_blank"
-                                href="https://zentunes.netlify.app"
-                            >
-                                visit
-                                <img src="assets/icons/open-in-tab.svg" />
-                            </a>
-                        </div>
-                        <div class="project__image ta-ta">
-                            <img src="images/projects-imgs/krishisearch.jpeg" />
-                        </div>
-                    </div>
-
-                    <!-- other -->
-                    <div class="project project6">
-                        <div class="project__data">
-                            <h2>Maze Battle Game</h2>
-                            <details>
-                                <summary>
-                                    Player vs CPU maze runnig game
-                                </summary>
-                                <em>-- solo project</em>
-                                Technologies used:
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>CSS</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </details>
-                            <a
-                                rel="noopener"
-                                target="_blank"
-                                href="https://mazebattle.netlify.app"
-                            >
-                                visit
-                                <img src="assets/icons/open-in-tab.svg" />
-                            </a>
-                        </div>
-                        <div class="project__image ta-ta">
-                            <img
-                                src="images/projects-imgs/relaxingmelody.jpeg"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACTS -->
-            <section id="s4-contacts" class="sec4">
-                <h4 class="expC">
-                    <span
-                        style="display: inline !important"
-                        id="contact-heading"
-                        class="underline-sp headerSpan header__texts"
-                    >
-                        Contacts
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em>Institution:</em>
+                      <span itemprop="name">Bishnupur High School</span>
                     </span>
-                </h4>
-                <div class="contacts-container relative">
-                    <div class="adjuster-div flex">
-                        <!-- Social icons -->
-                        <div class="fs-contacts flex-col">
-                            <ul>
-                                <li class="animated-underline-white">
-                                    <a
-                                        class=""
-                                        href="mailto:demoemailforportfolio1@gmail.com"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke-width="1.5"
-                                            stroke="currentColor"
-                                            class="size-6"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                                            ></path>
-                                        </svg>
-                                        <span class="s4">
-                                            <span class="s5"> My Email </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="animated-underline-white">
-                                    <a
-                                        class=""
-                                        target="_blank"
-                                        href="https://www.linkedin.com/in/subhajitgorai"
-                                    >
-                                        <svg
-                                            fill="#000000"
-                                            version="1.1"
-                                            id="Layer_1"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            viewBox="-143 145 512 512"
-                                            xml:space="preserve"
-                                            width="64px"
-                                            height="64px"
-                                        >
-                                            <g
-                                                id="SVGRepo_bgCarrier"
-                                                stroke-width="0"
-                                            ></g>
-                                            <g
-                                                id="SVGRepo_tracerCarrier"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <g>
-                                                    <path
-                                                        d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M339,617c0,5.5-4.5,10-10,10h-432c-5.5,0-10-4.5-10-10V185c0-5.5,4.5-10,10-10h432c5.5,0,10,4.5,10,10V617z"
-                                                    ></path>
-                                                    <rect
-                                                        x="-8.5"
-                                                        y="348.4"
-                                                        width="49.9"
-                                                        height="159.7"
-                                                    ></rect>
-                                                    <path
-                                                        d="M177.7,346.9c-28.6,0-46.5,15.6-49.8,26.6v-25.1H71.8c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4v82.6H241v-88.8C241,369.9,213.2,346.9,177.7,346.9z"
-                                                    ></path>
-                                                    <path
-                                                        d="M15.4,273c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C45.1,284.9,33.8,273,15.4,273z"
-                                                    ></path>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span class="s4">
-                                            <span class="s5"> LinkedIn </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="animated-underline-white">
-                                    <a
-                                        class=""
-                                        target="_blank"
-                                        href="https://github.com/Dream-World-Coder"
-                                    >
-                                        <svg
-                                            width="64px"
-                                            height="64px"
-                                            viewBox="0 0 20 20"
-                                            version="1.1"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            fill="#000000"
-                                        >
-                                            <g
-                                                id="SVGRepo_bgCarrier"
-                                                stroke-width="0"
-                                            ></g>
-                                            <g
-                                                id="SVGRepo_tracerCarrier"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <title>github [#142]</title>
-                                                <desc>
-                                                    Created with Sketch.
-                                                </desc>
-                                                <defs></defs>
-                                                <g
-                                                    id="Page-1"
-                                                    stroke="none"
-                                                    stroke-width="1"
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                >
-                                                    <g
-                                                        id="Dribbble-Light-Preview"
-                                                        transform="translate(-140.000000, -7559.000000)"
-                                                        fill="#000000"
-                                                    >
-                                                        <g
-                                                            id="icons"
-                                                            transform="translate(56.000000, 160.000000)"
-                                                        >
-                                                            <path
-                                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
-                                                                id="github-[#142]"
-                                                            ></path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span class="s4">
-                                            <span class="s5"> Github </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="animated-underline-white">
-                                    <a
-                                        class=""
-                                        target="_blank"
-                                        href="http://www.youtube.com/@sillyscience5"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            x="0px"
-                                            y="0px"
-                                            width="100"
-                                            height="100"
-                                            viewBox="0 0 50 50"
-                                        >
-                                            <path
-                                                d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
-                                            ></path>
-                                        </svg>
-                                        <span class="s4">
-                                            <span class="s5"> YouTube </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="animated-underline-white">
-                                    <a
-                                        class=""
-                                        target="_blank"
-                                        href="https://x.com/Subhaji09951021"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            x="0px"
-                                            y="0px"
-                                            width="100"
-                                            height="100"
-                                            viewBox="0 0 50 50"
-                                        >
-                                            <path
-                                                d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"
-                                            ></path>
-                                        </svg>
-                                        <span class="s4">
-                                            <span class="s5">
-                                                X (twitter)
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- contact form -->
-                        <div id="email-box" class="email-box">
-                            <!-- the line part -->
-                            <span class="question"
-                                >Have something to share? CLICK HERE!
-                                <br /><br />
-                                <div class="line"></div>
-                            </span>
-                            <!-- the message box -->
-                            <div class="box ta-taX flex-col">
-                                <form
-                                    id="form"
-                                    action="https://api.web3forms.com/submit"
-                                    method="post"
-                                >
-                                    <input
-                                        type="hidden"
-                                        name="redirect"
-                                        value="https://subha-py-c.github.io/Noni/"
-                                    />
-                                    <input
-                                        type="hidden"
-                                        name="access_key"
-                                        value="67104936-b712-4f86-abec-8dddf48deff3"
-                                    />
-                                    <div class="name-and-email-input flex-col">
-                                        <div class="nm">
-                                            <label for="emailer_name"
-                                                >Your name:</label
-                                            >
-                                            <input
-                                                type="text"
-                                                name="name"
-                                                id="emailer_name"
-                                                placeholder="Your Name"
-                                                required
-                                            />
-                                        </div>
-                                        <br />
-                                        <div class="eml">
-                                            <label for="email"
-                                                >Email address for me to contact
-                                                you:</label
-                                            >
-                                            <input
-                                                type="email"
-                                                id="email"
-                                                name="email"
-                                                placeholder="Email Id [eg. jhon123@example.com]"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <label for="msg">Message:</label>
-                                    <textarea
-                                        name="message"
-                                        id="msg"
-                                        rows="1"
-                                        required
-                                        placeholder="Your Message"
-                                    ></textarea>
-                                    <div class="btnCon">
-                                        <button
-                                            class="btn email-btn"
-                                            type="submit"
-                                            id="submit"
-                                            value="Send"
-                                        >
-                                            Send
-                                        </button>
-                                        <div class="back-btn flexed">
-                                            <img
-                                                width="24"
-                                                height="24"
-                                                src="icons/back-btn.svg"
-                                            />
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="year">Year:</em>
+                      2015-2021
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="grade">Grade:</em>
+                      96.42%
+                    </span>
+                  </span>
+                </div>
+                <div class="ball-pointer" id="ball-pointer-2"></div>
+              </div>
+              <div class="academics__card__container ta-ta">
+                <div class="acad__card card1 firstcard1">
+                  <img class="lazy-load" loading="lazy" src="images/bhs3.gif" />
+                </div>
+              </div>
+            </div>
+            <div class="acad__institutions">
+              <div class="ins__container">
+                <div
+                  itemscope
+                  itemtype="http://schema.org/EducationalOccupationalCredential"
+                  class="institute__data"
+                >
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <strong class="inst" itemprop="educationalLevel">
+                        Higher Secondary Education
+                      </strong>
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em>Institution:</em>
+                      <span itemprop="name">Bishnupur High School</span>
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="year">Year:</em>
+                      2021-2023
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="grade">Grade:</em>
+                      88%
+                    </span>
+                  </span>
+                </div>
+                <div class="ball-pointer" id="ball-pointer-3"></div>
+              </div>
+              <div class="academics__card__container ta-ta">
+                <div class="acad__card card2 secondcard2">
+                  <img class="lazy-load" loading="lazy" src="images/bhs2.jpg" />
+                </div>
+                <div class="acad__card card3 firstcard3">
+                  <img class="lazy-load" loading="lazy" src="images/bhs1.gif" />
+                </div>
+              </div>
+            </div>
+            <div class="acad__institutions">
+              <div class="ins__container">
+                <div
+                  itemscope
+                  itemtype="http://schema.org/EducationalOccupationalCredential"
+                  class="institute__data"
+                >
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <strong class="inst" itemprop="credentialCategory">
+                        B.Tech in Information Technology
+                      </strong>
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em>Institution:</em>
+                      <span itemprop="name">IIEST Shibpur</span>
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="year">Year:</em>
+                      2023-present
+                    </span>
+                  </span>
+                  <br />
+                  <span class="s2 relative">
+                    <span class="s3 relative">
+                      <em class="grade">Grade:</em>
+                      8.46
+                    </span>
+                  </span>
+                </div>
+                <div class="ball-pointer" id="ball-pointer-4"></div>
+              </div>
+              <div class="academics__card__container ta-ta">
+                <div class="acad__card card3 secondcard3">
+                  <img
+                    class="lazy-load"
+                    loading="lazy"
+                    src="images/iiest1.jpeg"
+                  />
+                </div>
+                <div class="acad__card card1 secondcard1">
+                  <img
+                    class="lazy-load"
+                    loading="lazy"
+                    src="images/iiest4.jpeg"
+                  />
+                </div>
+                <div class="acad__card card2 thirdcard2">
+                  <img
+                    class="lazy-load"
+                    loading="lazy"
+                    src="images/iiest6.jpeg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <!-- cv -->
-                    <div id="cv" class="download-cv relative cen">
-                        <a
-                            rel="noopener"
-                            href="https://drive.google.com/file/d/1UIkDtRNXdytYzERmwnCE-35yjhMJ2WXD/view?usp=sharing"
+      <!-- SKILLS -->
+      <section id="s2-skills" class="sec2">
+        <div id="SK" class="con d3">
+          <h4 class="w" id="SS">
+            <span
+              id="skill"
+              class="exps underline-sp headerSpan header__texts"
+              style="display: inline !important"
+            >
+              Skills
+            </span>
+          </h4>
+
+          <!-- for desktops -->
+          <div class="skill-wrapper">
+            <div class="card-container">
+              <div class="card">
+                <!-- web dev -->
+                <div data-value="70%" class="card-elem">
+                  <p>
+                    <em><mark>Web Development</mark></em>
+                  </p>
+                  <em><u>Frontend:</u></em>
+                  <br />
+                  HTML, CSS, JavaScript, SASS, Tailwind CSS,
+                  <b>jQuery, ReactJS</b>
+                  <br />
+                  <br />
+                  <em><u>Backend:</u></em>
+                  <br />
+                  Node.js, Express,
+                  <b>Flask</b>
+                  ,SQL databases [SQLite, PostgreSQL]
+                  <br />
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  70%
+                </div>
+                <!-- ui-ux -->
+                <div data-value="70%" class="card-elem">
+                  <p>
+                    <em><mark>UI/UX</mark></em>
+                  </p>
+                  <em><u>Tools:</u></em>
+                  <br />
+                  Figma, GIMP
+                  <br />
+                  <br />
+                  <em><u>Libraries:</u></em>
+                  <br />
+                  GSAP, AOS, tilt.js, Typed.js, LENIS(locomotive scroll),
+                  Split-type
+                  <br />
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  70%
+                </div>
+                <!-- dsa -->
+                <div data-value="85%" class="card-elem">
+                  <p>
+                    <em><mark>Data Structures</mark></em>
+                    <!-- and Algorithms -->
+                  </p>
+                  <em><u>Languages:</u></em>
+                  <br />
+                  Python, C, C++
+                  <br />
+                  <br />
+                  <em><u>Concepts:</u></em>
+                  <br />
+                  Time & Space Complexity, Function call Stack, Array, String,
+                  Stack, Queue, LinkedList, Tree, Searching, Sorting
+                  <br />
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  85%
+                </div>
+                <!-- python -->
+                <div data-value="85%" class="card-elem">
+                  <p>
+                    <em><mark>Python</mark></em>
+                  </p>
+                  <em><u>Concepts:</u></em>
+                  <br />
+                  OOPs, DSA, Data Visualisation using numpy & matplotlib[small
+                  scale], Web Development[flask]
+                  <br />
+                  <br />
+                  <em
+                    ><u>Some libraries I have used in personal projects:</u></em
+                  >
+                  <br />
+                  • numpy, matplotlib, PIL, Tesseract, OpenCV, reportlab, bs4,
+                  selenium etc
+                  <br />
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  85%
+                </div>
+                <!-- scraping -->
+                <div data-value="60%" class="card-elem">
+                  <p>
+                    <em><mark>Web Scraping</mark></em>
+                  </p>
+                  <em><u>Libraries:</u></em>
+                  <br />
+                  requests, BeautifulSoup, Selenium
+                  <br />
+                  <br />
+                  <em><u>api:</u></em>
+                  <br />
+                  Scrapeowl
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  60%
+                </div>
+                <!-- git -->
+                <div data-value="70%" class="card-elem">
+                  <p>
+                    <em><mark>Collaboration</mark></em>
+                  </p>
+                  Can easily collaborate with team members using GitHub
+                  <br />
+                  <em><u>Collaboration experience:</u></em>
+                  <br />
+                  Hactoberfest'24, College GDG Dev Team members
+                  <br />
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  70%
+                </div>
+                <!-- others -->
+                <div data-value="50%" class="card-elem">
+                  <p>
+                    <em><mark>Telegram Bots</mark></em>
+                  </p>
+                  I have created several telgram bots.
+                  <br />
+                  <br />
+                  <p>
+                    <em><mark>Scripting</mark></em>
+                  </p>
+                  Linux and MAC OS shell scripting, and python Scripting for
+                  automation
+                  <br />
+                  <br />
+                  <span class="progress-bar flexed">
+                    <span class="growth"></span>
+                  </span>
+                  50%
+                </div>
+              </div>
+            </div>
+            <div
+              id="skill-list"
+              class="s-list"
+              data-tilt-max="5"
+              data-tilt-speed="400"
+              data-tilt-perspective="500"
+            >
+              <!-- web dev -->
+              <div class="first-x inverse2 list-elem">
+                Web Development
+                <span class="strech active">•••</span>
+              </div>
+              <!-- ui-ux -->
+              <div class="middle inverse2 list-elem">
+                UI/UX
+                <span class="strech">•••</span>
+              </div>
+              <!-- dsa -->
+              <div class="middle inverse2 list-elem">
+                Data Structures
+                <span class="strech">•••</span>
+              </div>
+              <!-- python -->
+              <div class="middle inverse2 list-elem">
+                Python
+                <span class="strech">•••</span>
+              </div>
+              <!-- scraping -->
+              <div class="middle inverse2 list-elem">
+                Web Scraping
+                <span class="strech">•••</span>
+              </div>
+              <!-- git -->
+              <div class="middle inverse2 list-elem">
+                Collaboration
+                <span class="strech">•••</span>
+              </div>
+              <!-- scripting -->
+              <div class="lst middle inverse2 list-elem">
+                Others
+                <span class="strech">•••</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- For mobiles -->
+          <div class="skill__container">
+            <div data-value="70%" class="skill__box">
+              <img src="assets/icons/web-dev.svg" />
+              Web Development
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="70%" class="skill__box">
+              <img src="assets/icons/ui-ux.svg" />
+              UI-UX
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="85%" class="skill__box">
+              <img src="assets/icons/data-str.svg" />
+              Data Structures
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="85%" class="skill__box">
+              <img src="assets/icons/python.svg" />
+              PYTHON
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="60%" class="skill__box">
+              <img src="assets/icons/web-scraping.svg" />
+              Web Scraping
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="70%" class="skill__box">
+              <img src="assets/icons/node.svg" />
+              Node + Express
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="65%" class="skill__box">
+              <img src="assets/icons/react.svg" />
+              React
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="55%" class="skill__box">
+              <img src="assets/icons/js.svg" />
+              JavaScript
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="70%" class="skill__box">
+              <img src="assets/icons/git.svg" />
+              Git & GitHub
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+
+            <div data-value="85%" class="skill__box">
+              <img src="assets/icons/shell.svg" />
+              Flask
+              <span class="progress-bar flexed">
+                <span class="growth ta-ta"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="s3-projects" class="sec3">
+        <!-- anchor div -->
+        <div id="div3" style="width: 0; height: 0; opacity: 0"></div>
+
+        <h4 id="EN" class="project-heading-container">
+          <span
+            id="project-heading"
+            class="exp underline-sp headerSpan header__texts"
+            style="display: inline !important"
+          >
+            Selected Projects
+          </span>
+        </h4>
+        <div class="projects-wrapper full">
+          <!-- lumifeed -->
+          <div class="project project1">
+            <div class="project__data">
+              <h2>LumiFeed</h2>
+              <details>
+                <summary>A neat platform for reading news.</summary>
+                A webapp with clutterless UI to read news without
+                advertisements, along with summary of each news available. Many
+                other mindblowing features available.
+                <em>-- Solo Project</em>
+                Technologies used:
+                <ul>
+                  <li>flask (for backend)</li>
+                  <li>SQL database [postgresql & sqlite]</li>
+                  <li>JavaScript AJAX and Fetch api</li>
+                  <li>Web Scraping [requests, bs4]</li>
+                  <li>HTML, CSS, SASS, figma</li>
+                  <li>AI Summary api</li>
+                </ul>
+              </details>
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://lumifeed.up.railway.app"
+              >
+                visit
+                <img src="assets/icons/open-in-tab.svg" />
+              </a>
+            </div>
+            <div class="project__image ta-ta">
+              <img src="images/projects-imgs/lumifeed.jpeg" />
+            </div>
+          </div>
+
+          <!-- encryptease -->
+          <div class="project project2">
+            <div class="project__data">
+              <h2>encryptease</h2>
+              <details>
+                <summary>Encrypt your data easily. (fun app)</summary>
+                A powerful webapp to encrypt messages and files easily that are
+                highly secure and cannot be decrypted without the encryption
+                KEY.
+                <em>-- Solo Project</em>
+                Technologies used:
+                <ul>
+                  <li>flask</li>
+                  <li>Cryptography Module (python)</li>
+                  <li>JavaScript AJAX</li>
+                  <li>HTML - CSS - JS</li>
+                </ul>
+              </details>
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://encryptease.pythonanywhere.com"
+              >
+                visit
+                <img src="assets/icons/open-in-tab.svg" />
+              </a>
+            </div>
+            <div class="project__image ta-ta">
+              <img src="images/projects-imgs/encryptease.jpeg" />
+            </div>
+          </div>
+
+          <!-- portfolio -->
+          <div class="project project3">
+            <div class="project__data">
+              <h2>Portfolio</h2>
+              <details>
+                <summary>This portfolio website you are in right now.</summary>
+                A portfolio Website to easily introduce me to everyone.
+                <em>-- solo project</em>
+                Technologies used:
+                <ul>
+                  <li>HTML-CSS-JavaScript</li>
+                  <li>GSAP</li>
+                  <li>locomotive scroll</li>
+                  <li>UI-UX</li>
+                  <li>figma</li>
+                </ul>
+              </details>
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://github.com/Subha-Py-c/subhajit"
+              >
+                see code in github
+                <img src="assets/icons/open-in-tab.svg" />
+              </a>
+            </div>
+            <div class="project__image ta-ta">
+              <img src="images/projects-imgs/portfolio.jpeg" />
+            </div>
+          </div>
+
+          <!-- opencanvas -->
+          <div class="project project4">
+            <div class="project__data">
+              <h2>opencanvas.institute</h2>
+              <details>
+                <summary>A retro blogging site for everyone.</summary>
+                Currently IN MAKING. various blogs and journals will be
+                published here later on.
+                <em>-- Collaborative project</em>
+                Technologies used:
+                <ul>
+                  <li>Mongo - Express - React - Node [MERN]</li>
+                  <li>TailwindCSS &amp; SASS</li>
+                  <li>websocket</li>
+                  <li>...</li>
+                </ul>
+              </details>
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://dream-world-coder.github.io/opencanvas/hero/"
+              >
+                visit [incomple now :(]
+                <img src="assets/icons/open-in-tab.svg" />
+              </a>
+            </div>
+            <div class="project__image ta-ta">
+              <img src="images/projects-imgs/opencanvas.jpeg" />
+            </div>
+          </div>
+
+          <!-- zentunes / relaxing melody -->
+          <div class="project project5">
+            <div class="project__data">
+              <h2>Zentunes</h2>
+              <details>
+                <summary>Ear-soothing music anywhere.</summary>
+                A music streaming platform for retro lovers.
+                <em>-- Solo Project.</em>
+                Some development is yet to do, sorry!!.
+                <br />
+                <br />
+                Technologies used:
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>SCSS</li>
+                  <li>React</li>
+                </ul>
+              </details>
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://zentunes.netlify.app"
+              >
+                visit
+                <img src="assets/icons/open-in-tab.svg" />
+              </a>
+            </div>
+            <div class="project__image ta-ta">
+              <img src="images/projects-imgs/krishisearch.jpeg" />
+            </div>
+          </div>
+
+          <!-- other -->
+          <div class="project project6">
+            <div class="project__data">
+              <h2>Maze Battle Game</h2>
+              <details>
+                <summary>Player vs CPU maze runnig game</summary>
+                <em>-- solo project</em>
+                Technologies used:
+                <ul>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
+              </details>
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://mazebattle.netlify.app"
+              >
+                visit
+                <img src="assets/icons/open-in-tab.svg" />
+              </a>
+            </div>
+            <div class="project__image ta-ta">
+              <img src="images/projects-imgs/relaxingmelody.jpeg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section id="s4-contacts" class="sec4">
+        <h4 class="expC">
+          <span
+            style="display: inline !important"
+            id="contact-heading"
+            class="underline-sp headerSpan header__texts"
+          >
+            Contacts
+          </span>
+        </h4>
+        <div class="contacts-container relative">
+          <div class="adjuster-div flex">
+            <!-- Social icons -->
+            <div class="fs-contacts flex-col">
+              <ul>
+                <li class="animated-underline-white">
+                  <a class="" href="mailto:demoemailforportfolio1@gmail.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                      ></path>
+                    </svg>
+                    <span class="s4">
+                      <span class="s5"> My Email </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="animated-underline-white">
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://www.linkedin.com/in/subhajitgorai"
+                  >
+                    <svg
+                      fill="#000000"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="-143 145 512 512"
+                      xml:space="preserve"
+                      width="64px"
+                      height="64px"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M339,617c0,5.5-4.5,10-10,10h-432c-5.5,0-10-4.5-10-10V185c0-5.5,4.5-10,10-10h432c5.5,0,10,4.5,10,10V617z"
+                          ></path>
+                          <rect
+                            x="-8.5"
+                            y="348.4"
+                            width="49.9"
+                            height="159.7"
+                          ></rect>
+                          <path
+                            d="M177.7,346.9c-28.6,0-46.5,15.6-49.8,26.6v-25.1H71.8c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4v82.6H241v-88.8C241,369.9,213.2,346.9,177.7,346.9z"
+                          ></path>
+                          <path
+                            d="M15.4,273c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C45.1,284.9,33.8,273,15.4,273z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                    <span class="s4">
+                      <span class="s5"> LinkedIn </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="animated-underline-white">
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://github.com/Dream-World-Coder"
+                  >
+                    <svg
+                      width="64px"
+                      height="64px"
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>github [#142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
                         >
-                            •Curriculam Vitae•
-                        </a>
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-140.000000, -7559.000000)"
+                            fill="#000000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                id="github-[#142]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <span class="s4">
+                      <span class="s5"> Github </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="animated-underline-white">
+                  <a
+                    class=""
+                    target="_blank"
+                    href="http://www.youtube.com/@sillyscience5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="100"
+                      height="100"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
+                      ></path>
+                    </svg>
+                    <span class="s4">
+                      <span class="s5"> YouTube </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="animated-underline-white">
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://x.com/Subhaji09951021"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="100"
+                      height="100"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"
+                      ></path>
+                    </svg>
+                    <span class="s4">
+                      <span class="s5"> X (twitter) </span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- contact form -->
+            <div id="email-box" class="email-box">
+              <!-- the line part -->
+              <span class="question"
+                >Have something to share? CLICK HERE! <br /><br />
+                <div class="line"></div>
+              </span>
+              <!-- the message box -->
+              <div class="box ta-taX flex-col">
+                <form
+                  id="form"
+                  action="https://api.web3forms.com/submit"
+                  method="post"
+                >
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://subha-py-c.github.io/Noni/"
+                  />
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="67104936-b712-4f86-abec-8dddf48deff3"
+                  />
+                  <div class="name-and-email-input flex-col">
+                    <div class="nm">
+                      <label for="emailer_name">Your name:</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="emailer_name"
+                        placeholder="Your Name"
+                        required
+                      />
                     </div>
-                </div>
-            </section>
+                    <br />
+                    <div class="eml">
+                      <label for="email"
+                        >Email address for me to contact you:</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email Id [eg. jhon123@example.com]"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <label for="msg">Message:</label>
+                  <textarea
+                    name="message"
+                    id="msg"
+                    rows="1"
+                    required
+                    placeholder="Your Message"
+                  ></textarea>
+                  <div class="btnCon">
+                    <button
+                      class="btn email-btn"
+                      type="submit"
+                      id="submit"
+                      value="Send"
+                    >
+                      Send
+                    </button>
+                    <div class="back-btn flexed">
+                      <img width="24" height="24" src="icons/back-btn.svg" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
 
-            <!-- THANKS -->
-            <section id="s5-thanks" class="sec5">
-                <div class="hidden">
-                    <h1>Thanks For Visiting</h1>
-                </div>
-                <div id="viewers"></div>
-            </section>
+          <!-- cv -->
+          <div id="cv" class="download-cv relative cen">
+            <a
+              rel="noopener"
+              href="https://drive.google.com/file/d/1UIkDtRNXdytYzERmwnCE-35yjhMJ2WXD/view?usp=sharing"
+            >
+              •Curriculam Vitae•
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <!-- cursor -->
-            <div class="cursor" id="cursor"></div>
-        </main>
+      <!-- THANKS -->
+      <section id="s5-thanks" class="sec5">
+        <div class="hidden">
+          <h1>Thanks For Visiting</h1>
+        </div>
+        <div id="viewers"></div>
+      </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-        <script>
-            // const lenis = new Lenis();
-            const lenis = new Lenis({
-                duration: 1.2,
-                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            });
+      <!-- cursor -->
+      <div class="cursor" id="cursor"></div>
+    </main>
 
-            function raf(time) {
-                lenis.raf(time);
-                requestAnimationFrame(raf);
-            }
-            requestAnimationFrame(raf);
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+      // const lenis = new Lenis();
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      });
 
-        <!-- main.js -->
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+    </script>
 
-        <!-- <script type="module" src="js/main.js"></script> -->
-        <script src="js/gsap.js"></script>
-        <script src="js/functions/cursor-functions/cursor.js"></script>
-        <script src="js/functions/cursor-functions/hiding-cursor.js"></script>
-        <script src="js/functions/contacts.js"></script>
-        <script src="js/functions/nav-js/nav-appear-and-toggle-svg.js"></script>
-        <script src="js/functions/nav-js/dim.js"></script>
-        <script src="js/functions/hello.js"></script>
-        <script src="js/functions/skills-js/skill-card.js"></script>
-        <script src="js/functions/project-js/project.js"></script>
-        <script src="js/functions/utils/dark-mode.js"></script>
-        <script src="js/functions/utils/hidden-classes.js"></script>
-        <script src="js/functions/utils/scroll-related/smooth-scrolling.js"></script>
-        <script src="js/functions/utils/scroll-related/underline_on_scroll.js"></script>
-        <!-- Cloudflare Web Analytics -->
-        <script
-            defer
-            src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon='{"token": ""}'
-        ></script>
-        <!-- End Cloudflare Web Analytics -->
-    </body>
+    <!-- main.js -->
+
+    <!-- <script type="module" src="js/main.js"></script> -->
+    <script src="js/gsap.js"></script>
+    <script src="js/functions/cursor-functions/cursor.js"></script>
+    <script src="js/functions/cursor-functions/hiding-cursor.js"></script>
+    <script src="js/functions/contacts.js"></script>
+    <script src="js/functions/nav-js/nav-appear-and-toggle-svg.js"></script>
+    <script src="js/functions/nav-js/dim.js"></script>
+    <script src="js/functions/hello.js"></script>
+    <script src="js/functions/skills-js/skill-card.js"></script>
+    <script src="js/functions/project-js/project.js"></script>
+    <script src="js/functions/utils/dark-mode.js"></script>
+    <script src="js/functions/utils/hidden-classes.js"></script>
+    <script src="js/functions/utils/scroll-related/smooth-scrolling.js"></script>
+    <script src="js/functions/utils/scroll-related/underline_on_scroll.js"></script>
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": ""}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
 </html>

@@ -4,7 +4,7 @@ const projects = [
     summary: "A site for art-lovers to browse and share all types of arts.",
     description: "Currently IN MAKING.",
     technologies: ["Next.js", "Typescript", "MongoDB", "React", "TailwindCSS"],
-    link: "https://www.opencanvas.blog",
+    link: "https://www.opencanvas.institute",
     image: "/images/projects-imgs/opencanvas.jpeg",
   },
 
@@ -43,7 +43,7 @@ const projects = [
   //   description:
   //     "webapp to edit markdown documents and latex, insert images, links. Easily export to PDF/txt/md. completely free.",
   //   technologies: ["React", "TailwindCSS", "jsPDF"],
-  //   link: "https://www.opencanvas.blog/markdown2pdf",
+  //   link: "https://www.opencanvas.institute/markdown2pdf",
   //   image: "/images/projects-imgs/md2pdf.jpeg",
   // },
 
