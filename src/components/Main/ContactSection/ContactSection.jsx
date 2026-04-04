@@ -86,7 +86,7 @@ const ContactSection = () => {
           className="underline-sp headerSpan header__texts inline"
           id="contact-heading"
         >
-          Contacts
+          Links
         </span>
       </h4>
       <div className="contacts-container relative">
@@ -209,14 +209,9 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* CV download link */}
         <div id="cv" className="download-cv relative cen">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://drive.google.com/file"
-          >
-            Curriculam Vitae
+          <a rel="noopener noreferrer" target="_blank" href="/cv/resume.pdf">
+            Curriculum Vitae
           </a>
         </div>
       </div>

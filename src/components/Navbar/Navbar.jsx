@@ -13,7 +13,7 @@ const Navbar = () => {
     { href: "#s-last", text: "Academics" },
     { href: "#SK", text: "Skills" },
     { href: "#div3", text: "Projects" },
-    { href: "#s4-contacts", text: "Contact" },
+    { href: "#s4-contacts", text: "Links" },
   ];
 
   // Handle main element class toggling

@@ -11,15 +11,15 @@ import Main from "./components/Main/Main";
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
-    return (
-        <>
-            <Loader />
-            <Blog />
-            <Navbar />
-            <Main />
-            <Analytics />
-        </>
-    );
+  return (
+    <>
+      <Loader />
+      <Blog />
+      <Navbar />
+      <Main />
+      <Analytics />
+    </>
+  );
 }
 
 export default App;
