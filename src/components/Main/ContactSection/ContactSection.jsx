@@ -9,32 +9,44 @@ const ContactSection = () => {
   const socialLinks = [
     {
       href: "mailto:demoemailforportfolio1@gmail.com",
-      icon: "/icons/email.svg",
+      icon: "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
       label: "My Email",
       isExternal: false,
     },
     {
       href: "https://www.linkedin.com/in/subhajitgorai",
-      icon: "/icons/linkedin.svg",
+      icon: "https://www.linkedin.com/favicon.ico",
       label: "LinkedIn",
       isExternal: true,
     },
     {
       href: "https://github.com/Dream-World-Coder",
-      icon: "/icons/github.svg",
+      icon: "https://github.com/favicon.ico",
       label: "Github",
       isExternal: true,
     },
+    // {
+    //   href: "http://www.youtube.com/@sillyscience5",
+    //   icon: "/icons/yt.svg",
+    //   label: "YouTube",
+    //   isExternal: true,
+    // },
+    // {
+    //   href: "https://x.com/Subhaji09951021",
+    //   icon: "/icons/twitter.svg",
+    //   label: "X (twitter)",
+    //   isExternal: true,
+    // },
     {
-      href: "http://www.youtube.com/@sillyscience5",
-      icon: "/icons/yt.svg",
-      label: "YouTube",
+      href: "https://www.codechef.com/users/midnight_dream",
+      icon: "https://www.codechef.com/favicon.ico",
+      label: "CodeChef",
       isExternal: true,
     },
     {
-      href: "https://x.com/Subhaji09951021",
-      icon: "/icons/twitter.svg",
-      label: "X (twitter)",
+      href: "https://www.codechef.com/users/midnight_dream",
+      icon: "https://codeforces.com/favicon.ico",
+      label: "CodeForces",
       isExternal: true,
     },
   ];

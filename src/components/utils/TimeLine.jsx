@@ -34,12 +34,12 @@ const ExperienceTimeline = ({ data: experiences = [] }) => {
             ${index !== experiences.length - 1 ? "border-b border-dashed border-[#dac0b9]" : ""} pb-5`}
         >
           {/* Logo/Icon */}
-          <div className="flex-shrink-0 relative z-10">
+          <div className={`flex-shrink-0 relative z-10`}>
             {experience.logo ? (
               <img
                 src={experience.logo}
                 alt={`${experience.title} logo`}
-                className="size-16 rounded-full bg-[#ECD2CB] border border-[#dac0b9] object-contain p-3 ta-ta"
+                className={`size-16 rounded-full ${experience.logoClr || "bg-[#ECD2CB]"} border border-[#dac0b9] object-contain p-3 ta-ta`}
               />
             ) : (
               <div className="size-16 rounded-full bg-[#ECD2CB] border border-[#dac0b9] flex items-center justify-center">
@@ -73,7 +73,7 @@ const ExperienceTimeline = ({ data: experiences = [] }) => {
 
             {/* Description */}
             <p
-              className="text-neutral-600 text-base leading-relaxed mb-4 font-[poppins] max-w-[65ch]"
+              className="text-neutral-600 text-base leading-relaxed mb-4 font-[poppins] max-w-[65ch] whitespace-normal"
               dangerouslySetInnerHTML={{ __html: experience.description }}
             />
 

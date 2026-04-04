@@ -2,8 +2,15 @@ const projects = [
   {
     title: "OpenCanvas",
     summary: "A site for art-lovers to browse and share all types of arts.",
-    description: "Currently IN MAKING.",
-    technologies: ["Next.js", "Typescript", "MongoDB", "React", "TailwindCSS"],
+    description:
+      "OpenCanvas: Find and read high-quality scientific articles, research papers, and compelling stories. Explore our library and expand your knowledge today.",
+    technologies: [
+      "Express.js",
+      "JavaScript",
+      "MongoDB",
+      "React",
+      "TailwindCSS",
+    ],
     link: "https://www.opencanvas.institute",
     image: "/images/projects-imgs/opencanvas.jpeg",
   },
@@ -67,21 +74,13 @@ const projects = [
   },
 
   {
-    title: "myClassroom",
-    summary: "Distraction-free platform for focused selfstudy",
+    title: "Computable Poetry",
+    summary: "Bangla poem generation without Machine Learning",
     description:
-      "webapp to create courses from youtube playlists. Design own courses, study without any ads or distractions. Track course progress, to-do, goals, study hours.",
-    technologies: [
-      "flask",
-      "yt_dlp",
-      "MongoDB",
-      "pymongo",
-      "jwt",
-      "React",
-      "TailwindCSS",
-    ],
-    link: "https://github.com/Dream-World-Coder/myClassroom",
-    image: "/images/projects-imgs/myclassroom.jpeg",
+      "Generating metrically correct, semantically plausible Bangla poems using formal grammars, constraint satisfaction, and graph-based planning. No machine learning anywhere in the pipeline.",
+    technologies: ["python", "automata", "dijkstra", "sssp", "tagging", "nlp"],
+    link: "https://computable-poetry.vercel.app",
+    image: "/images/projects-imgs/graph.png",
   },
 
   {

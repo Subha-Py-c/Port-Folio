@@ -1,7 +1,38 @@
 export const experienceData = [
+  // {
+  //   date: "June 2026 (Expected)",
+  //   title: "Advanced Application Engineering Intern @Accenture",
+  //   organization: "Accenture",
+  //   description: `
+  //   Incoming AAE Intern @Accenture.
+  //   `,
+  //   logo: "https://www.accenture.com/favicon.ico",
+  //   // logoClr: "bg-white",
+  //   badges: [],
+  // },
+  {
+    date: "February 2026 - Present",
+    title: "UG Research Fellow @TEXMiN (TTRP), IIT (ISM) Dhanbad",
+    organization: "TEXMiN (TTRP)",
+    description: `
+    Building an AI/ML-powered Cyber-Physical System (CPS) for real-time hazard prediction in underground coal mines, funded by the National Mission on Interdisciplinary Cyber-Physical Systems.<br/><br/>
+
+    Architected a three-tier zonal system:
+    <dl>
+      <li>sensor-layer data acquisition (Zone A)</li>
+      <li>Raspberry Pi edge nodes running LSTM models for zone-local anomaly detection and instant alerts (Zone B)</li>
+      <li>And a central aggregation server for mine-wide pattern analysis and response coordination (Zone C).</li>
+    </dl>
+
+    <br/>Core work spans time-series forecasting, edge ML deployment, IoT sensor integration, and fault-tolerant CPS design for safety-critical environments.<br/>
+    `,
+    logo: "/images/texmin.png",
+    logoClr: "bg-black",
+    badges: [],
+  },
   {
     date: "October 2025 - Present",
-    title: "Web dev lead at CODEIIEST",
+    title: "Web dev lead @CODEIIEST",
     organization: "CODEIIEST",
     description: `
     Currently volunteering as the web dev lead in CODEIIEST, the official coding club of IIEST Shibpur.
@@ -9,6 +40,7 @@ export const experienceData = [
     visit: <a href="https://www.codeiiest.in" target="_blank"><u>codeiiest</u></a>
     `,
     logo: "https://www.codeiiest.in/assets/logo/codeiiest-logo.png",
+    logoClr: "bg-black",
     badges: [],
   },
   {
@@ -35,23 +67,6 @@ export const experienceData = [
   },
 
   {
-    date: "December 2024",
-    title: "SWOC(Social Winter Of Code) Contributor",
-    organization: "SWOC",
-    description:
-      "Participated in Social Winter Of Code OpenSource event organised by DevFolio",
-    logo: "https://www.socialwinterofcode.com/SWOC_W_Black.png",
-    badges: [
-      {
-        type: "plain",
-        text: "Contributor Badge",
-        icon: "",
-        url: `${window.location.href}/images/swc.png`,
-      },
-    ],
-  },
-
-  {
     date: "October 2024",
     title: "Completed HactoberFest'24",
     organization: "HactoberFest'24",
@@ -62,8 +77,10 @@ export const experienceData = [
         type: "plain",
         text: "Badges",
         icon: "",
-        url: `${window.location.href}/images/hb.png`,
+        url: `/images/hb.png`,
       },
     ],
+    logoClr: "bg-sky-700",
+    logo: "/images/hb.svg",
   },
 ];

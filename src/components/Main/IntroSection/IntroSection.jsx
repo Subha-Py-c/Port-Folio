@@ -35,23 +35,23 @@ const IntroSection = () => {
               onMouseEnter={() => setIsImageVisible(true)}
               onMouseLeave={() => setIsImageVisible(false)}
             >
-              A CS Undergraduate @BESU
+              A CS Undergraduate @IIEST
             </div>
           </h2>
 
           <div className="intro__content md:font-[content] uppercase max-w-[100ch] pl-2 md:pl-10">
             <p className="hero-p introduction">
-              Made it to my Fifth Semester at{" "}
+              Made it to my Sixth Semester at{" "}
               <a
                 className="college_url"
                 href="https://www.iiests.ac.in"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                BESU
+                IIEST Shibpur
               </a>
-              . I love building stuff, strongly interested in Full Stack Web
-              Development and Decentralised Technologies.
+              . I love building stuff, strongly interested in Designing Robust
+              Systems and Competitive Programming.
               <span
                 id="profileImg"
                 className={`block  rotate-[7deg] ${

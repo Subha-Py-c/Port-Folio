@@ -1,7 +1,37 @@
 const cardElements = [
   {
-    title: "Web Development",
+    title: "Programming Languages",
     value: "90%",
+    content: (
+      <>
+        Skilled in python, C++, JavaScript,
+        <br />
+        <br />
+        besides them, I use TypeScript, Rust, Java
+        <br />
+        <br />
+      </>
+    ),
+  },
+
+  {
+    title: "Competitive Programming",
+    value: "67%",
+    content: (
+      <>
+        <ul className="list-disc ml-6">
+          <li>Candidate Master @CodeForces, highest rating: 2029</li>
+          <li>4&#9733; @CodeChef, highest rating: 1924</li>
+        </ul>
+        <br />
+        <br />
+      </>
+    ),
+  },
+
+  {
+    title: "Web Development",
+    value: "75%",
     content: (
       <>
         <em>
@@ -26,32 +56,33 @@ const cardElements = [
       </>
     ),
   },
+
   {
-    title: "Python",
-    value: "90%",
+    title: "Machine Learning",
+    value: "50%",
     content: (
       <>
-        Skilled in python
-        <br />
-        <br />
-        besides python I use: C, C++, JavaScript
+        Studying, On it.
         <br />
         <br />
       </>
     ),
   },
+
   {
     title: "Core Subjects",
-    value: "90%",
+    value: "80%",
     content: (
       <>
         <ul className="list-disc ml-6">
-          <li>Data Structures</li>
-          <li>Algorithms</li>
+          <li>Data Structures &amp; Algorithms</li>
           <li>Relational Database Management Systems</li>
           <li>Operating Systems</li>
+          <li>Computer Networks</li>
           <li>Object Oriented System Design</li>
+          <li>Automata Theory</li>
           <li>Digital Logic, Computer Organisation &amp; Architecture</li>
+          <li>High Performance Computer Architecture</li>
         </ul>
         <br />
         <br />
@@ -59,25 +90,8 @@ const cardElements = [
     ),
   },
   {
-    title: "Web Scraping",
-    value: "75%",
-    content: (
-      <>
-        Skilled in automated web scraping, and desiging agentic workflows.
-        <br />
-        <em>
-          <u>Libraries:</u>
-        </em>
-        <br />
-        requests, BeautifulSoup, Selenium
-        <br />
-        <br />
-      </>
-    ),
-  },
-  {
     title: "Collaboration",
-    value: "85%",
+    value: "80%",
     content: (
       <>
         Can easily collaborate with team members using Git &amp; GitHub
