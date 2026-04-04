@@ -15,16 +15,7 @@ export const experienceData = [
     title: "UG Research Fellow @TEXMiN (TTRP), IIT (ISM) Dhanbad",
     organization: "TEXMiN (TTRP)",
     description: `
-    Building an AI/ML-powered Cyber-Physical System (CPS) for real-time hazard prediction in underground coal mines, funded by the National Mission on Interdisciplinary Cyber-Physical Systems.<br/><br/>
-
-    Architected a three-tier zonal system:
-    <dl>
-      <li>sensor-layer data acquisition (Zone A)</li>
-      <li>Raspberry Pi edge nodes running LSTM models for zone-local anomaly detection and instant alerts (Zone B)</li>
-      <li>And a central aggregation server for mine-wide pattern analysis and response coordination (Zone C).</li>
-    </dl>
-
-    <br/>Core work spans time-series forecasting, edge ML deployment, IoT sensor integration, and fault-tolerant CPS design for safety-critical environments.<br/>
+    Building an AI/ML-powered Cyber-Physical System (CPS) for real-time hazard prediction in underground coal mines, funded by the National Mission on Interdisciplinary Cyber-Physical Systems.<br/>
     `,
     logo: "/images/texmin.png",
     logoClr: "bg-black",
