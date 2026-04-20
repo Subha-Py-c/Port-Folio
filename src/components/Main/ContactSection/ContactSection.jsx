@@ -44,7 +44,7 @@ const ContactSection = () => {
       isExternal: true,
     },
     {
-      href: "https://www.codechef.com/users/midnight_dream",
+      href: "https://codeforces.com/profile/midnight_dream",
       icon: "https://codeforces.com/favicon.ico",
       label: "CodeForces",
       isExternal: true,
