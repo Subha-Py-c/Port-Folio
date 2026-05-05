@@ -35,23 +35,15 @@ const IntroSection = () => {
               onMouseEnter={() => setIsImageVisible(true)}
               onMouseLeave={() => setIsImageVisible(false)}
             >
-              A CS Undergraduate @IIEST
+              A Student and Learner.
             </div>
           </h2>
 
-          <div className="intro__content md:font-[content] uppercase max-w-[100ch] pl-2 md:pl-10">
+          <div className="intro__content md:font-[content] max-w-[100ch] pl-2 md:pl-10 mt-12">
             <p className="hero-p introduction">
-              Made it to my Sixth Semester at{" "}
-              <a
-                className="college_url"
-                href="https://www.iiests.ac.in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                IIEST Shibpur
-              </a>
-              . I love building stuff, strongly interested in Designing Robust
-              Systems and Competitive Programming.
+              About Me: Trying to understand systems, design them, and in search
+              of their limits. Can they adapt? I love Research, exploring
+              algorithms and sometimes competitive programming.
               <span
                 id="profileImg"
                 className={`block  rotate-[7deg] ${
@@ -66,8 +58,8 @@ const IntroSection = () => {
               </span>
             </p>
             <p className="hero-p is-xs">
-              Thanks for visiting. Don&apos;t forget to explore my projects.
-              I&apos;m eager to EAGER TO CONNECT &amp; COLLABORATE.
+              Thanks for visiting. Be sure to check out my projects, they are
+              full of fun!
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 const cardElements = [
   {
-    title: "Programming Languages",
+    title: "Languages",
     value: "90%",
     content: (
       <>
@@ -15,7 +15,7 @@ const cardElements = [
   },
 
   {
-    title: "Competitive Programming",
+    title: "Programming",
     value: "67%",
     content: (
       <>

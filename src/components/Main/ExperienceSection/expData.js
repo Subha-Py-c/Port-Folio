@@ -1,17 +1,17 @@
 export const experienceData = [
-  // {
-  //   date: "June 2026 (Expected)",
-  //   title: "Advanced Application Engineering Intern @Accenture",
-  //   organization: "Accenture",
-  //   description: `
-  //   Incoming AAE Intern @Accenture.
-  //   `,
-  //   logo: "https://www.accenture.com/favicon.ico",
-  //   // logoClr: "bg-white",
-  //   badges: [],
-  // },
   {
-    date: "February 2026 - Present",
+    date: "May 2026 - July 2026",
+    title: "Advanced Application Engineering Intern @Accenture",
+    organization: "Accenture",
+    description: `
+    Incoming AAE Intern @Accenture.
+    `,
+    logo: "/images/accenture-logo.png",
+    logoClr: "bg-white",
+    badges: [],
+  },
+  {
+    date: "February 2026 - December 2026",
     title: "UG Research Fellow @TEXMiN (TTRP), IIT (ISM) Dhanbad",
     organization: "TEXMiN (TTRP)",
     description: `
@@ -22,7 +22,7 @@ export const experienceData = [
     badges: [],
   },
   {
-    date: "October 2025 - Present",
+    date: "October 2025 - October 2026",
     title: "Web dev lead @CODEIIEST",
     organization: "CODEIIEST",
     description: `
