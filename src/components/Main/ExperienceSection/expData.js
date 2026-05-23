@@ -2,9 +2,20 @@ export const experienceData = [
   {
     date: "May 2026 - July 2026",
     title: "Advanced Application Engineering Intern @Accenture",
-    organization: "Accenture",
+    organization: "Accenture", // dont matter in UI
     description: `
-    Incoming AAE Intern @Accenture.
+    AEH Intern.
+    `,
+    logo: "/images/accenture-logo.png",
+    logoClr: "bg-white",
+    badges: [],
+  },
+  {
+    date: "April 2026 - Present",
+    title: "Research Intern @CMI (Chennai Mathematical Institute)",
+    organization: "CMI",
+    description: `
+    Research Intern.
     `,
     logo: "/images/accenture-logo.png",
     logoClr: "bg-white",

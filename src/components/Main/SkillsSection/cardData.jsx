@@ -21,7 +21,7 @@ const cardElements = [
       <>
         <ul className="list-disc ml-6">
           <li>Candidate Master @CodeForces, highest rating: 2029</li>
-          <li>4&#9733; @CodeChef, highest rating: 1924</li>
+          <li>5&#9733; @CodeChef, highest rating: 2026</li>
         </ul>
         <br />
         <br />
