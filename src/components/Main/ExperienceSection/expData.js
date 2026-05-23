@@ -17,7 +17,7 @@ export const experienceData = [
     description: `
     Research Intern.
     `,
-    logo: "/images/accenture-logo.png",
+    logo: "https://www.cmi.ac.in/pix/cmi-header.png",
     logoClr: "bg-white",
     badges: [],
   },
