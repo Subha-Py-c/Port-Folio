@@ -11,7 +11,7 @@ export const experienceData = [
     badges: [],
   },
   {
-    date: "April 2026 - Present",
+    date: "March 2026 - May 2026",
     title: "Research Intern @CMI (Chennai Mathematical Institute)",
     organization: "CMI",
     description: `
